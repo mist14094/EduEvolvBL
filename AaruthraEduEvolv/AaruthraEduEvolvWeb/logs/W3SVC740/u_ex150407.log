@@ -1,0 +1,6 @@
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2015-04-07 17:16:22
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs-version cs(User-Agent) cs(Cookie) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2015-04-07 17:16:21 W3SVC740 allium 192.169.56.64 GET /new.zip - 80 - 50.75.183.20 HTTP/1.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/41.0.2272.118+Safari/537.36 - - veera.aaruthra.com 200 0 0 16694275 380 158463
+2015-04-07 17:21:59 W3SVC740 allium 192.169.56.64 GET /new.zip - 80 - 50.75.183.20 HTTP/1.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/41.0.2272.118+Safari/537.36 - - veera.aaruthra.com 200 0 995 393487 380 3000
