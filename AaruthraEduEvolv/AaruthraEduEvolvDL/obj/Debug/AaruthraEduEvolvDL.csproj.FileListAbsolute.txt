@@ -1,0 +1,10 @@
+D:\Projects\MyProjects\Interest\EduEvolvBL\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvDL\bin\Debug\NLog.config
+D:\Projects\MyProjects\Interest\EduEvolvBL\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvDL\bin\Debug\AaruthraEduEvolvDL.dll
+D:\Projects\MyProjects\Interest\EduEvolvBL\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvDL\bin\Debug\AaruthraEduEvolvDL.pdb
+D:\Projects\MyProjects\Interest\EduEvolvBL\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvDL\bin\Debug\AaruthraEduEvolvConstants.dll
+D:\Projects\MyProjects\Interest\EduEvolvBL\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvDL\bin\Debug\NLog.dll
+D:\Projects\MyProjects\Interest\EduEvolvBL\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvDL\bin\Debug\AaruthraEduEvolvConstants.pdb
+D:\Projects\MyProjects\Interest\EduEvolvBL\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvDL\bin\Debug\NLog.xml
+D:\Projects\MyProjects\Interest\EduEvolvBL\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvDL\obj\Debug\AaruthraEduEvolvDL.csprojResolveAssemblyReference.cache
+D:\Projects\MyProjects\Interest\EduEvolvBL\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvDL\obj\Debug\AaruthraEduEvolvDL.dll
+D:\Projects\MyProjects\Interest\EduEvolvBL\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvDL\obj\Debug\AaruthraEduEvolvDL.pdb
