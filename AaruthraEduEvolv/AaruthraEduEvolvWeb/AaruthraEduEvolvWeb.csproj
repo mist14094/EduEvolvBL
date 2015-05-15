@@ -62,6 +62,7 @@
     <Content Include="bin\AaruthraEduEvolvWeb.pdb" />
     <Content Include="bin\NLog.dll" />
     <Content Include="bin\NLog.xml" />
+    <Content Include="RecoverPassword.aspx" />
     <Content Include="register.aspx" />
     <Content Include="Video.aspx" />
     <Content Include="CourseList.aspx" />
@@ -250,6 +251,13 @@
     </Compile>
     <Compile Include="Products.aspx.designer.cs">
       <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RecoverPassword.aspx.cs">
+      <DependentUpon>RecoverPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecoverPassword.aspx.designer.cs">
+      <DependentUpon>RecoverPassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="register.aspx.cs">
       <DependentUpon>register.aspx</DependentUpon>
