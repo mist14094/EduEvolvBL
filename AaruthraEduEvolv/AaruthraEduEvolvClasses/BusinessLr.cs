@@ -113,6 +113,32 @@ namespace AaruthraEduEvolvBL
             return i;
         }
 
+
+        public int insertUser(string FirstName, string LastName, string CompanyName, string Address, string City, string State, string Pincode, string Phone, string Email, string Username, string Password)
+        {
+            _nlog.Trace(message:
+               this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+               System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            return _access.insertUser(FirstName, LastName, CompanyName, Address, City, State, Pincode, Phone, Email, Username, Password);
+        
+        }
+
+        public DataSet sendActivationMail(int userId)
+        {
+            _nlog.Trace(message:
+                this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            return _access.sendActivationMail(userId);
+        }
+
+        public int ActivateUser(string code)
+        {
+            _nlog.Trace(message:
+             this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+             System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            return _access.ActivateUser(code);
+        
+        }
     }
 
 }

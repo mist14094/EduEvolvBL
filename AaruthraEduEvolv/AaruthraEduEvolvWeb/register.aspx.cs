@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Aaruthra.Mails;
 
 public partial class register : System.Web.UI.Page
 {
@@ -60,7 +61,8 @@ public partial class register : System.Web.UI.Page
                         message = "Entered mobile has already been used.";
                         break;
                     default:
-                        message = "Registration successful.User Id: " + userId.ToString();
+                        message = "Registration successful. Activation Mail Sent to the registered email ID";
+                        sendActivationMail(userId);
                         break;
                 }
                 return message;
@@ -72,6 +74,33 @@ public partial class register : System.Web.UI.Page
             Console.WriteLine("SQL Error" + ex.Message.ToString());
             return "Error";
         }
+    }
+
+    private void sendActivationMail(int userId)
+    {
+        var bl = new AaruthraEduEvolvBL.BusinessLr();
+        DataSet ds  =  bl.sendActivationMail(userId);
+        try
+        {
+            string s = Request.Url.Scheme + System.Uri.SchemeDelimiter + Request.Url.Host +
+                       (Request.Url.IsDefaultPort ? "" : ":" + Request.Url.Port);
+           string mailcon = SendMail.BuildMail(ds,"Activation",s);
+            DataTable DtMailContent = ds.Tables[0];
+            DataTable DtUserData= ds.Tables[1];
+            
+            sendMailContemt(DtMailContent.Rows[0]["FormatName"].ToString(),mailcon, DtUserData.Rows[0]["EmailID"].ToString());
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("SQL Error" + ex.Message.ToString());
+            alert.InnerHtml = ex.Message.ToString();
+            alert.Style.Add("display", "true");
+        }
+    }
+
+    private void sendMailContemt(string header, string body, string to)
+    {
+        SendMail.SendMailNow(to, header, body, true);
     }
     public void insertUser()
     {
@@ -88,36 +117,12 @@ public partial class register : System.Web.UI.Page
         Email = txt_email.Text.ToString();
         Username = txt_username.Text.ToString();
         Password = txt_passowrd.Text.ToString();
-
+        var bl = new AaruthraEduEvolvBL.BusinessLr();
         try
         {
-            int userId = 0;
-            string constr = ConfigurationManager.ConnectionStrings["Connstring"].ConnectionString;
-            using (SqlConnection con = new SqlConnection(constr))
-            {
-                using (SqlCommand cmd = new SqlCommand("sp_InsertUser"))
-                {
-                    using (SqlDataAdapter sda = new SqlDataAdapter())
-                    {
-                        cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.AddWithValue("@FirstName", FirstName);
-                        cmd.Parameters.AddWithValue("@LastName", LastName);
-                        cmd.Parameters.AddWithValue("@CompanyName", CompanyName);
-                        cmd.Parameters.AddWithValue("@Address", Address);
-                        cmd.Parameters.AddWithValue("@City", City);
-                        cmd.Parameters.AddWithValue("@State", State);
-                        cmd.Parameters.AddWithValue("@Pincode", Pincode);
-                        cmd.Parameters.AddWithValue("@Phone", Phone);
-                        cmd.Parameters.AddWithValue("@Email", Email);
-                        cmd.Parameters.AddWithValue("@Username", Username);
-                        cmd.Parameters.AddWithValue("@Password", Password);
-
-                        cmd.Connection = con;
-                        con.Open();
-                        userId = Convert.ToInt32(cmd.ExecuteScalar());
-                        con.Close();
-                    }
-                }
+            int userId = bl.insertUser(FirstName, LastName, CompanyName, Address, City, State, Pincode, Phone, Email, Username, Password);
+            
+            
                 string message = string.Empty;
                 switch (userId)
                 {
@@ -131,7 +136,8 @@ public partial class register : System.Web.UI.Page
                         message = "Entered mobile has already been used.";
                         break;
                     default:
-                        message = "Thanks for signing up. Now you can sign in as " + txt_username.Text.ToString();
+                         message = "Registration successful. Activation Mail Sent to the registered email ID";
+                        sendActivationMail(userId);
                         break;
                 }
                 //return message;
@@ -139,7 +145,7 @@ public partial class register : System.Web.UI.Page
                 alert.Style.Add("display", "true");
                 ClearValues();
                 //ClientScript.RegisterStartupScript(GetType(), "alert", "alert('" + message + "');", true);
-            }
+            
         }
         catch (SqlException ex)
         {

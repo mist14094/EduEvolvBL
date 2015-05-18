@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="aboutus.aspx" />
+    <Content Include="Activation.aspx" />
     <Content Include="bin\AaruthraEduEvolvBL.dll" />
     <Content Include="bin\AaruthraEduEvolvBL.pdb" />
     <Content Include="bin\AaruthraEduEvolvConstants.dll" />
@@ -64,6 +65,7 @@
     <Content Include="bin\NLog.xml" />
     <Content Include="RecoverPassword.aspx" />
     <Content Include="register.aspx" />
+    <Content Include="Templates\Registration.html" />
     <Content Include="Video.aspx" />
     <Content Include="CourseList.aspx" />
     <Content Include="css\animate.css" />
@@ -246,6 +248,13 @@
     <Compile Include="aboutus.aspx.designer.cs">
       <DependentUpon>aboutus.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Activation.aspx.cs">
+      <DependentUpon>Activation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Activation.aspx.designer.cs">
+      <DependentUpon>Activation.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
@@ -266,6 +275,7 @@
     <Compile Include="register.aspx.designer.cs">
       <DependentUpon>register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="App_Code\SendMail.cs" />
     <Compile Include="services.aspx.designer.cs">
       <DependentUpon>services.aspx</DependentUpon>
     </Compile>

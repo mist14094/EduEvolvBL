@@ -215,5 +215,127 @@ namespace AaruthraEduEvolvDL
         }
 
 
+
+        public int insertUser(string FirstName, string LastName, string CompanyName, string Address, string City, string State, string Pincode, string Phone, string Email, string Username, string Password)
+        {
+            Nlog.Trace(message: this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" + System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            var dataTable = new DataTable();
+            var selectCommand = new SqlCommand
+            {
+                CommandText = string.Format(_constants.sp_InsertUserAccount),
+                CommandType = CommandType.StoredProcedure,
+                CommandTimeout = 180,
+            };
+            selectCommand.Parameters.AddWithValue("@FirstName", FirstName);
+            selectCommand.Parameters.AddWithValue("@LastName", LastName);
+            selectCommand.Parameters.AddWithValue("@CompanyName", CompanyName);
+            selectCommand.Parameters.AddWithValue("@Address", Address);
+            selectCommand.Parameters.AddWithValue("@City", City);
+            selectCommand.Parameters.AddWithValue("@State", State);
+            selectCommand.Parameters.AddWithValue("@Pincode", Pincode);
+            selectCommand.Parameters.AddWithValue("@Phone", Phone);
+            selectCommand.Parameters.AddWithValue("@Email", Email);
+            selectCommand.Parameters.AddWithValue("@Username", Username);
+            selectCommand.Parameters.AddWithValue("@Password", Password);
+
+            var adapter = new SqlDataAdapter(selectCommand);
+            var connection = new SqlConnection(_constants.DefaultConnectionString);
+            selectCommand.Connection = connection;
+            try
+            {
+                connection.Open();
+                return Convert.ToInt32(selectCommand.ExecuteScalar());
+            }
+            catch (Exception ex)
+            {
+                Nlog.Trace(
+                    this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Error", ex);
+                throw ex;
+            }
+            finally
+            {
+                connection.Close();
+                connection.Dispose();
+                Nlog.Trace(message:
+                    this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Leaving");
+            }
+        }
+
+        public DataSet sendActivationMail(int userId)
+        {
+            Nlog.Trace(message: this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" + System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            var dataSet = new DataSet();
+            var selectCommand = new SqlCommand
+            {
+                CommandText = string.Format(_constants.sp_SendAccountActivationMail),
+                CommandType = CommandType.StoredProcedure,
+                CommandTimeout = 180,
+            };
+            selectCommand.Parameters.AddWithValue("@UserID", userId);
+          
+            var adapter = new SqlDataAdapter(selectCommand);
+            var connection = new SqlConnection(_constants.DefaultConnectionString);
+            selectCommand.Connection = connection;
+            try
+            {
+                connection.Open();
+                adapter.Fill(dataSet);
+                return dataSet;
+            }
+            catch (Exception ex)
+            {
+                Nlog.Trace(
+                    this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Error", ex);
+                throw ex;
+            }
+            finally
+            {
+                connection.Close();
+                connection.Dispose();
+                Nlog.Trace(message:
+                    this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Leaving");
+            }
+        }
+
+        public int ActivateUser(string code)
+        {
+            Nlog.Trace(message: this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" + System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            var dataTable = new DataTable();
+            var selectCommand = new SqlCommand
+            {
+                CommandText = string.Format(_constants.sp_ActivateMailAccount),
+                CommandType = CommandType.StoredProcedure,
+                CommandTimeout = 180,
+            };
+            selectCommand.Parameters.AddWithValue("@code", code);
+           
+            var adapter = new SqlDataAdapter(selectCommand);
+            var connection = new SqlConnection(_constants.DefaultConnectionString);
+            selectCommand.Connection = connection;
+            try
+            {
+                connection.Open();
+                return Convert.ToInt32(selectCommand.ExecuteScalar());
+            }
+            catch (Exception ex)
+            {
+                Nlog.Trace(
+                    this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Error", ex);
+                throw ex;
+            }
+            finally
+            {
+                connection.Close();
+                connection.Dispose();
+                Nlog.Trace(message:
+                    this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Leaving");
+            }
+        }
     }
 }

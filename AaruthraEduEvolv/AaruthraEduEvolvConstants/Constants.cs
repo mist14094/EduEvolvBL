@@ -25,6 +25,8 @@ namespace AaruthraEduEvolvConstants
         public string GetAllUser =
             " SELECT  [user].UserDetails.UserID , FirstName , LastName , OrganizationName , EmailID , MobileNo , [user].UserDetails.CreatedDate , [user].UserDetails.ModifiedDate , AccountID , UserName FROM [USER].[USERDETAILS] LEFT OUTER JOIN [user].[UserAccounts] ON [user].UserDetails.UserID = [user].UserAccounts.UserID";
 
+        public string sp_InsertUserAccount = "sp_InsertUser";
+
         public string sp_CheckUserAccount = "sp_CheckUserAccount";
 
         public string GetAllCourse =
@@ -35,5 +37,9 @@ namespace AaruthraEduEvolvConstants
 
         public string GetSubscription =
             "SELECT [SubscriptionID] ,[UserID] ,[CourseID] ,[ActivationDate] ,[ExpiredOn] ,[StatusID]  FROM [veeraEDU].[course].[Subscription] WHERE UserID = @userID and ExpiredOn >= getdate()";
+
+        public string sp_SendAccountActivationMail = "sp_SendAccountActivationMail";
+
+        public string sp_ActivateMailAccount = "sp_ActivateMailAccount";
     }
 }
