@@ -85,11 +85,11 @@ namespace Aaruthra.Mails
 
         public static bool SendMailNow(string strTo, string strSubject, string strText, bool isBodyHtml)
         {
-            string login = "inventracesupport@createalytics.com";
-            string smtp = "mail.createalytics.com";
-            string password = "inventrace@1234";
+            string login = "veeraedu@aaruthra.com";
+            string smtp = "mail.aaruthra.com";
+            string password = "veeraedu@1234";
             int port = 587;
-            string email = "inventracesupport@createalytics.com";
+            string email = "veeraedu@aaruthra.com";
             bool ssl = false;
 
             return SendMailNow(strTo, strSubject, strText, isBodyHtml, smtp, port, login, password, email, ssl);

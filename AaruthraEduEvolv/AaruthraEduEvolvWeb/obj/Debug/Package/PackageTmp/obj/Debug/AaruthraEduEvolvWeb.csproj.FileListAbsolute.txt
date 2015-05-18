@@ -12,3 +12,17 @@ D:\Projects\MyProjects\Interest\EduEvolvBL\EduEvolvBL\AaruthraEduEvolv\AaruthraE
 D:\Projects\MyProjects\Interest\EduEvolvBL\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\AaruthraEduEvolvDL.pdb
 D:\Projects\MyProjects\Interest\EduEvolvBL\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\obj\Debug\AaruthraEduEvolvWeb.dll
 D:\Projects\MyProjects\Interest\EduEvolvBL\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\obj\Debug\AaruthraEduEvolvWeb.pdb
+D:\Rasu\Vivek\EduEvol\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\NLog.config
+D:\Rasu\Vivek\EduEvol\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\AaruthraEduEvolvWeb.dll
+D:\Rasu\Vivek\EduEvol\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\AaruthraEduEvolvWeb.pdb
+D:\Rasu\Vivek\EduEvol\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\AaruthraEduEvolvBL.dll
+D:\Rasu\Vivek\EduEvol\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\AaruthraEduEvolvConstants.dll
+D:\Rasu\Vivek\EduEvol\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\NLog.dll
+D:\Rasu\Vivek\EduEvol\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\AaruthraEduEvolvDL.dll
+D:\Rasu\Vivek\EduEvol\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\AaruthraEduEvolvBL.pdb
+D:\Rasu\Vivek\EduEvol\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\AaruthraEduEvolvConstants.pdb
+D:\Rasu\Vivek\EduEvol\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\NLog.xml
+D:\Rasu\Vivek\EduEvol\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\AaruthraEduEvolvDL.pdb
+D:\Rasu\Vivek\EduEvol\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\obj\Debug\AaruthraEduEvolvWeb.csprojResolveAssemblyReference.cache
+D:\Rasu\Vivek\EduEvol\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\obj\Debug\AaruthraEduEvolvWeb.dll
+D:\Rasu\Vivek\EduEvol\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\obj\Debug\AaruthraEduEvolvWeb.pdb
