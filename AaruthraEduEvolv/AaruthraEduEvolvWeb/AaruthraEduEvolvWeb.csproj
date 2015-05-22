@@ -34,6 +34,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -63,6 +66,7 @@
     <Content Include="bin\AaruthraEduEvolvWeb.pdb" />
     <Content Include="bin\NLog.dll" />
     <Content Include="bin\NLog.xml" />
+    <Content Include="PasswordReset.aspx" />
     <Content Include="RecoverPassword.aspx" />
     <Content Include="register.aspx" />
     <Content Include="Templates\Registration.html" />
@@ -231,7 +235,9 @@
     <Content Include="validation\jquery.cookie.js" />
     <Content Include="validation\jquery.min.js" />
     <Content Include="CourseDetails.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -254,6 +260,13 @@
     </Compile>
     <Compile Include="Activation.aspx.designer.cs">
       <DependentUpon>Activation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordReset.aspx.cs">
+      <DependentUpon>PasswordReset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PasswordReset.aspx.designer.cs">
+      <DependentUpon>PasswordReset.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -278,6 +291,11 @@
     <Compile Include="App_Code\SendMail.cs" />
     <Compile Include="services.aspx.designer.cs">
       <DependentUpon>services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>test.edmx</DependentUpon>
     </Compile>
     <Compile Include="Video.aspx.cs">
       <DependentUpon>Video.aspx</DependentUpon>
@@ -368,6 +386,10 @@
     <None Include="obj\Debug\AaruthraEduEvolvWeb.csprojResolveAssemblyReference.cache" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="Site1.Master" />
+    <EntityDeploy Include="test.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>test.Designer.cs</LastGenOutput>
+    </EntityDeploy>
     <None Include="validation\bootstrap.css.bak" />
   </ItemGroup>
   <ItemGroup>

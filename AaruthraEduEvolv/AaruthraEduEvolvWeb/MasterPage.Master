@@ -19,7 +19,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="defaultForm" runat="server" action="" method="post" class="form-horizontal">
+    <form id="defaultForm" runat="server" action=""  method="post" class="form-horizontal">
     <div id="boxed" class="fullwidth">
         <div id="wrapper">
             <header id="header">

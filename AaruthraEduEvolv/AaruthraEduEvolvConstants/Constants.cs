@@ -41,5 +41,11 @@ namespace AaruthraEduEvolvConstants
         public string sp_SendAccountActivationMail = "sp_SendAccountActivationMail";
 
         public string sp_ActivateMailAccount = "sp_ActivateMailAccount";
+
+        public string sp_RequestPasswordReset = "sp_RequestPasswordReset";
+
+        public string sp_SendPasswordResetMail = "sp_SendPasswordResetMail";
+
+        public string sp_RequestPasswordChange = "sp_CheckPasswordReset";
     }
 }

@@ -5,11 +5,13 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Globalization;
 using System.Linq;
+using System.Reflection;
 using System.Web;
 using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using AaruthraEduEvolvConstants;
+using AaruthraEduEvolvWeb;
 
 public partial class signin : System.Web.UI.Page
 {
@@ -20,7 +22,7 @@ public partial class signin : System.Web.UI.Page
         //var material = bl.GetMaterials();
         //var courses = bl.GetCourses();
         //var csC = bl.GetCoursesWithMaterials();
-    }
+     }
 
     private void LoginUser()
     {
@@ -60,6 +62,17 @@ public partial class signin : System.Web.UI.Page
         }
         catch (Exception ex)
         {
+            //VeeraEDUEntities db = new VeeraEDUEntities();
+
+            //ErrorLog errorLog = new ErrorLog();
+            //errorLog.Activity = ;
+            //errorLog.ActivityDesc = ActivityDesc;
+            //errorLog.LogTime = DateTime.Now;
+            //errorLog.ErrorMessage = ErrorMessage;
+            //db.ErrorLogs.AddObject(errorLog);
+            //db.SaveChanges(); 
+      
+           
             Console.WriteLine("SQL Error" + ex.Message.ToString(CultureInfo.InvariantCulture));
             alert.InnerHtml = ex.Message.ToString(CultureInfo.InvariantCulture);
             alert.Style.Add("display", "true");

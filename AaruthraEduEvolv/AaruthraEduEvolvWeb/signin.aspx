@@ -36,36 +36,21 @@
                     }
                 }
 
-//            })
-//            .on('success.form.bv', function (e) {
-//                // Prevent submit form
-//                e.preventDefault();
-//                var $form = $(e.target),
-//                validator = $form.data('bootstrapValidator');
-//               
-//                $.ajax({
-//                    url: 'App_Code/WebMethodsCalls.cs/insertUser',
-//                    type: 'POST',
-//                  dataType:'JSON',
-//                contentType: "application/json; charset=utf-8",
-//                data: '{FirstName: "' + validator.getFieldElements('txt_firstname').val() + '",+ LastName: "' + validator.getFieldElements('txt_lastname').val() + '",+ CompanyName: "' + validator.getFieldElements('txt_companyname').val() + '",+ Address: "' + validator.getFieldElements('txt_address').val() + '",+ City: "' + validator.getFieldElements('txt_city').val() + '" ,+ State: "' + validator.getFieldElements('txt_state').val() + '" ,+ Pincode: "' + validator.getFieldElements('txt_Pincode').val() + '" ,+ Phone: "' + validator.getFieldElements('txt_phone').val() + '" ,+ Email: "' + validator.getFieldElements('txt_email').val() + '" ,+ Username: "' + validator.getFieldElements('txt_username').val() + '" ,+ Password: "' + validator.getFieldElements('txt_passowrd').val() + '" }',
-//                
-
-//                   // data: storeManager: '', uuid:'' ,
-//                    success: function (result) {
-//                        $form.find('.alert').html('Thanks for signing up. Now you can sign in as ' + result) ; //validator.getFieldElements('txt_username').val()).show();
-
-//                    },
-//                    failure:function(result) {
-//                        $form.find('.alert').html('Thanks for signing up. Now you can sign in as ' + result); //validator.getFieldElements('txt_username').val()).show(); 
-//                    }
-//                    
-//                });
+               
 
                 
             });
 
         });
+        $("#<%=txt_username.ClientID%>").keypress(function(e) {
+            debugger;
+    if (e.which == '13') {
+       var btn = $("#<%=btnSubmit.ClientID%>");
+        btn.click();
+    }
+});
+
+
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server" >
@@ -98,13 +83,13 @@
      
      <div class="form-group">
                                 <div class="col-lg-5 col-lg-offset-3">
-                                    <div><a href="#"> <strong>Forgot Password?</strong></a> / <a href="register.aspx">  <strong>Create Account</strong> </a></div>
+                                    <div><a href="RecoverPassword.aspx"> <strong>Forgot Password?</strong></a> / <a href="register.aspx">  <strong>Create Account</strong> </a></div>
                                     
                                 </div>
                             </div>
     <div class="form-group">
         <div class="col-lg-9 col-lg-offset-3">
-            <asp:Button ID="btnSubmit" runat="server" Text="Login" 
+            <asp:Button ID="btnSubmit" runat="server" Text="Login" ClientIDMode="Static"
                         class="btn btn-primary" onclick="btnSubmit_Click1"/>
             <%--<button type="submit" class="btn btn-primary" runat="server" OnServerClick="Submit_Click" CausesValidation="True">
                 Login</button>--%>

@@ -10,7 +10,7 @@
 namespace AaruthraEduEvolvWeb {
     
     
-    public partial class RecoverPassword {
+    public partial class PasswordReset {
         
         /// <summary>
         /// alert control.
@@ -22,13 +22,31 @@ namespace AaruthraEduEvolvWeb {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl alert;
         
         /// <summary>
-        /// txt_EmailID control.
+        /// ChangePassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_EmailID;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ChangePassword;
+        
+        /// <summary>
+        /// txt_passowrd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_passowrd;
+        
+        /// <summary>
+        /// txt_cpassowrd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_cpassowrd;
         
         /// <summary>
         /// btnSubmit control.

@@ -118,6 +118,13 @@ namespace Aaruthra.Mails
                     Body = Body.Replace("#LINK#", domain + "/activation.aspx?code=" + DtUserData.Rows[0]["EmailVerificationID"].ToString());
                     return Body;
                     break;
+                case  "ResetPassword":
+                    //User First Name - #FIRSTNAME#, reset link - #LINK#
+                    //FirstName,ResetCode
+                    Body = Body.Replace("#FIRSTNAME#", DtUserData.Rows[0]["FirstName"].ToString());
+                    Body = Body.Replace("#LINK#", domain + "/PasswordReset.aspx?code=" + DtUserData.Rows[0]["ResetCode"].ToString());
+                    return Body;
+                    break;
                 default:
                     break;
 

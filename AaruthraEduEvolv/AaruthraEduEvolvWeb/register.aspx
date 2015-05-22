@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <meta charset="utf-8">
-    <title>Subscription Signup | Marketo</title>
+    <title>Subscription Signup</title>
     <link rel="stylesheet" href="validation/bootstrap.css" />
     <link rel="stylesheet" href="validation/bootstrapValidator.css" />
     <script type="text/javascript" src="validation/jquery.min.js"></script>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VeeraEDUModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="VeeraEDUModelStoreContainer">
+    <EntitySet Name="ErrorLog" EntityType="VeeraEDUModel.Store.ErrorLog" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ActivityLog" EntityType="VeeraEDUModel.Store.ActivityLog" store:Type="Tables" Schema="user" />
+  </EntityContainer>
+  <EntityType Name="ErrorLog">
+    <Key>
+      <PropertyRef Name="LogID" />
+    </Key>
+    <Property Name="LogID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="LogTime" Type="datetime" Nullable="false" />
+    <Property Name="Activity" Type="nvarchar" MaxLength="100" />
+    <Property Name="ActivityDesc" Type="nvarchar" MaxLength="200" />
+    <Property Name="ErrorMessage" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="ActivityLog">
+    <Key>
+      <PropertyRef Name="LogID" />
+    </Key>
+    <Property Name="LogID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="int" />
+    <Property Name="CreatedTime" Type="datetime" />
+    <Property Name="Page" Type="nvarchar" MaxLength="250" />
+    <Property Name="Action" Type="nvarchar(max)" />
+  </EntityType>
+</Schema>
