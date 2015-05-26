@@ -66,9 +66,11 @@
     <Content Include="bin\AaruthraEduEvolvWeb.pdb" />
     <Content Include="bin\NLog.dll" />
     <Content Include="bin\NLog.xml" />
+    <Content Include="CourseSubscription.aspx" />
     <Content Include="PasswordReset.aspx" />
     <Content Include="RecoverPassword.aspx" />
     <Content Include="register.aspx" />
+    <Content Include="Subscription.aspx" />
     <Content Include="Templates\Registration.html" />
     <Content Include="Video.aspx" />
     <Content Include="CourseList.aspx" />
@@ -261,6 +263,13 @@
     <Compile Include="Activation.aspx.designer.cs">
       <DependentUpon>Activation.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CourseSubscription.aspx.cs">
+      <DependentUpon>CourseSubscription.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CourseSubscription.aspx.designer.cs">
+      <DependentUpon>CourseSubscription.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PasswordReset.aspx.cs">
       <DependentUpon>PasswordReset.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -291,6 +300,13 @@
     <Compile Include="App_Code\SendMail.cs" />
     <Compile Include="services.aspx.designer.cs">
       <DependentUpon>services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Subscription.aspx.cs">
+      <DependentUpon>Subscription.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Subscription.aspx.designer.cs">
+      <DependentUpon>Subscription.aspx</DependentUpon>
     </Compile>
     <Compile Include="test.Designer.cs">
       <AutoGen>True</AutoGen>

@@ -1,8 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="CourseDetails" CodeBehind="CourseDetails.aspx.cs" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CourseSubscription.aspx.cs" Inherits="AaruthraEduEvolvWeb.CourseSubscription" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
-<head runat="server">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head" runat="server">
     <title>Veera's Education</title>
     <!-- based on work by Theirry Koblentz http://alistapart.com/article/creating-intrinsic-ratios-for-video -->
     <!-- and Anders Andersen http://amobil.se/2011/11/responsive-embeds/ -->
@@ -139,7 +140,7 @@
 		
     </script>
 </head>
-<body runat="server">
+<body>
     <form id="form1" runat="server">
     <nav class="navbar navbar-static-top navbar-inverse" role="navigation">
         <div class="container-fluid">
@@ -193,13 +194,13 @@
            <br />
                             <div style="font-weight: bold">
                                 <asp:HyperLink ID="ProductLink" runat="server" Text='<% #Eval("CourseName")%>' Target="_blank"
-                                    NavigateUrl='<% # string.Concat("CourseList.aspx?CourseID=" , Eval("CourseID"))%>' /></div>
+                                    NavigateUrl='<% # string.Concat("subscribe.aspx?CourseID=" , Eval("CourseID"))%>' /></div>
                             <br />
                             <br />
                         </td>
                     </ItemTemplate>
                     <EmptyDataTemplate>
-                      <center> <b>There is no active course set for you, You can buy more course.<br/> <asp:Button runat="server" ID="btnBuyPlan" Text="Buy More" OnClick="btnBuyPlan_onClickEvent" /></b> </center>
+                      <center> <b>There is no active course set for you, You can buy more course.<br/> </b> </center>
                     </EmptyDataTemplate>
                 </asp:ListView>
                 <br />

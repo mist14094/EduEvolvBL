@@ -47,5 +47,7 @@ namespace AaruthraEduEvolvConstants
         public string sp_SendPasswordResetMail = "sp_SendPasswordResetMail";
 
         public string sp_RequestPasswordChange = "sp_CheckPasswordReset";
+
+        public string sp_ChangePassword = "sp_ChangePassword";
     }
 }

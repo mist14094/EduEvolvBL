@@ -449,5 +449,48 @@ namespace AaruthraEduEvolvDL
             }
         }
 
+
+        public int ChangePassword(string code, string password)
+        {
+            Nlog.Trace(message: this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" + System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            var dataTable = new DataTable();
+            var selectCommand = new SqlCommand
+            {
+                CommandText = string.Format(_constants.sp_ChangePassword),
+                CommandType = CommandType.StoredProcedure,
+                CommandTimeout = 180,
+            };
+            selectCommand.Parameters.AddWithValue("@code", code);
+            selectCommand.Parameters.AddWithValue("@password", password);
+
+            var adapter = new SqlDataAdapter(selectCommand);
+            var connection = new SqlConnection(_constants.DefaultConnectionString);
+            selectCommand.Connection = connection;
+            try
+            {
+                connection.Open();
+                return Convert.ToInt32(selectCommand.ExecuteScalar());
+            }
+            catch (Exception ex)
+            {
+                Nlog.Trace(
+                    this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Error", ex);
+                throw ex;
+            }
+            finally
+            {
+                connection.Close();
+                connection.Dispose();
+                Nlog.Trace(message:
+                    this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Leaving");
+            }
+        }
+
+        public object GetCustomerCourse(int UserID)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

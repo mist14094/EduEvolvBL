@@ -1,9 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="CourseDetails" CodeBehind="CourseDetails.aspx.cs" %>
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
-<head runat="server">
-    <title>Veera's Education</title>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Subscription.aspx.cs" Inherits="AaruthraEduEvolvWeb.Subscription" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+     <title>Veera's Education</title>
     <!-- based on work by Theirry Koblentz http://alistapart.com/article/creating-intrinsic-ratios-for-video -->
     <!-- and Anders Andersen http://amobil.se/2011/11/responsive-embeds/ -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -138,10 +135,9 @@
         }
 		
     </script>
-</head>
-<body runat="server">
-    <form id="form1" runat="server">
-    <nav class="navbar navbar-static-top navbar-inverse" role="navigation">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+     <nav class="navbar navbar-static-top navbar-inverse" role="navigation">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -169,7 +165,7 @@
                 <%-- <a  href=""><strong>Title of the video</strong>!</a>--%>
             </div>
         </div>
-        <div class="row">
+    <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <div class="visible-desktop" style="height: 12px">
                 </div>
@@ -207,61 +203,5 @@
                 <br />
             </div>
         </div>
-    </div>
-    <!--footer-->
-    <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-        <div class="container">
-            <p class="text-muted text-center" style="padding-top: 12px">
-                <small><a target="_blank" href="http://aaruthra.com/">Powered by Aaruthra Technologies</a>.
-                    © 2015 - Veera's Education</small></p>
         </div>
-    </nav>
-    <!-- about box -->
-    <div id="about" class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">
-                        About us</h4>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        <strong>Veera's Education</strong> is formed by group of experienced and dedicated
-                        professionals, acadamacians in 2012 with one core concept in mind: to provide affordable,
-                        professional technology services to small & medium organizations. Our team consists
-                        of award winning experienced programmers and talented desgin professionals. We utilise
-                        a comprehensive development approach to define your goals, establish your objectives,
-                        and provide you with the most effective solutions that are tailored to meet your
-                        needs and philosophy.</p>
-                </div>
-                <div class="modal-footer">
-                    <div class="pull-left">
-                        Powered by <a target="_blank" href="http://aaruthra.com/">Aaruthra Technologies</a></div>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">
-                        OK</button>
-                </div>
-            </div>
-            <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dialog -->
-    </div>
-    <!-- /.modal -->
-    <script>
-
-        $('#lenscap-promo').addClass('animated bounceInDown');
-        $('#lenscap-promo').removeClass('hidden');
-
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-	  m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-59418-18', 'embedresponsively.com');
-        ga('send', 'pageview');
-
-    </script>
-    </form>
-</body>
-</html>
+</asp:Content>
