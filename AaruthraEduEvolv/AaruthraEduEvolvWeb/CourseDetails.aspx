@@ -199,9 +199,10 @@
                         </td>
                     </ItemTemplate>
                     <EmptyDataTemplate>
-                      <center> <b>There is no active course set for you, You can buy more course.<br/> <asp:Button runat="server" ID="btnBuyPlan" Text="Buy More" OnClick="btnBuyPlan_onClickEvent" /></b> </center>
+                      <center> <b>There is no active course set for you, You can buy more course.<br/> <asp:Button runat="server" ID="bu" Text="Buy More"/></b> </center>
                     </EmptyDataTemplate>
                 </asp:ListView>
+               
                 <br />
                 <br />
                 <br />

@@ -6,62 +6,37 @@
 <div id="subheader">
 				<div class="inner">
 					<h1>Who we are</h1>
-					<div class="rightaside"><h4>Call Us Toll FREE:<Br> (Energetic)-555-5555</h4></div>
+				
 				</div>
 			</div>
 			<!-- End subheader ####################### -->
-			<div id="breadcrumbs">
-				<span class="breadcrumbs">
-					Where you are: <a class="breadcrumbs-begin" rel="home" href="#">Home</a>
-					<span class="breadcrumbs-separator">/</span>
-					<a title="Features" href="#">Features</a>
-					<span class="breadcrumbs-separator">/</span> Typography
-				</span>
-			</div>
+			
 			
 			<div class="pagemid">
 				<div class="maincontent">
 					<div id="main">
 
-					<div class="one_third">
+					<div class="two_third">
 						<h2>Meet Our Team</h2>
-						<p>Duis ornare interdum interdum. Sed et nisl est. Fusce eu mattis nulla. Sed quis ipsum quis dolor <a href="#">sollicitudin vulputate</a>. Cras cursus, nunc nec tincidunt viverra, lorem turpis mollis tortor, <strong>dictum magna orci eget purus.</strong> Mauris vel consectetur urna. Curabitur gravida quam in orci commodo in dapibus velit cursus.</p>
-						<p>Nam quis scelerisque massa. Curabitur gravida quam in orci commodo in dapibus velit cursus. Curabitur gravida quam in orci commodo in dapibus velit cursus.</p>
-						<a href="#" class="button medium blue"><span>Service ›› </span></a>
-						<a href="#" class="button medium green"><span>Testimonials ›› </span></a>
+						<p>Education- A form of learning, transfers knowledge and skills of a group of people from one generation to another through teaching, training or research. Education frequently takes place under the guidance of others, but may also be autodidactic (self taught learning). Proudly exclaiming, such an effort has been taken by Veera' Education, to give an autodidactic learning to people nationally and globally who thrive for the need of language, which always has been the stumbling block, for one's growth and success.</p>
+						<p>Veera's Education being incorporated on 04th October 2012 with the Trade Mark(TM) registration, is started with a view to provide enormous education in language specialized in English and Hindi. Though incorporated as Veera' Education, it had had its foundation as Veera's Institute, Engineering college road, Near fly over, Annamalai Nagar, Chidambaram - 2, on 7th April 2009, where classes were conducted for people who had walked in for want of hindi and english languages.</p>
+                        <p>Veera's Education takes the privilege of serving the society broadly since it has analysed and extended its hard research towards the language need of Indian people, especially the South Indian people. We request each one of you, availing our product, to kindly follow all the protocols provided with our services for efficient learning.</p>
+                        <p>"Service to mankind is service to God". We are glad and proud to serve the mankind.</p>
+					
 					</div>
 
-					<div class="two_third last">
-						
-						<div class="one_fourth bio">
+					<div class="one_third last">
+						<center>
+						<div >
 							<figure>
 								<img width="130" height="130" src="images/demo/team1.jpg" class="aligncenter" />
 							</figure>
-							<h5>Collis Ta'eed</h5>
+							<h5>Veera</h5>
 							<h6><a href="#">CEO / Founder</a></h6>
-							Nam erat nisl, feugiat suscipit convallis euismod, sagittis sit amet felis. Suspendisse eu consectetur nulla. Donec ut metus vitae nisi consectetur pulvinar.
-						</div>
+							Mr.Veera, being the founder and the proprietor of Veera's Education, has taken the sole responsibility to synchronize all the activities of bringing our services, to the general public.
+						</div></center>
 						
-						<div class="one_fourth bio">
-							<img width="130" height="130" src="images/demo/team2.jpg" class="aligncenter" />
-							<h5>Cyan Ta'eed</h5>
-							<h6><a href="#">Director / Founder</a></h6>
-							Nam erat nisl, feugiat suscipit convallis euismod, sagittis sit amet felis. Suspendisse eu consectetur nulla. Donec ut metus vitae nisi consectetur pulvinar.
-						</div>
-						
-						<div class="one_fourth bio">
-							<img width="130" height="130" src="images/demo/team3.jpg" class="aligncenter" />
-							<h5>Jeffrey Way</h5>
-							<h6><a href="#">Nettuts+ Editor</a></h6>
-							Nam erat nisl, feugiat suscipit convallis euismod, sagittis sit amet felis. Suspendisse eu consectetur nulla. Donec ut metus vitae nisi consectetur pulvinar.
-						</div>
-
-						<div class="one_fourth bio last">
-							<img width="130" height="130" src="images/demo/team4.jpg" class="aligncenter" />
-							<h5>John Barton</h5>
-							<h6><a href="#">Marketplace Dev</a></h6>
-							Nam erat nisl, feugiat suscipit convallis euismod, sagittis sit amet felis. Suspendisse eu consectetur nulla. Donec ut metus vitae nisi consectetur pulvinar.
-						</div>
+					
 					
 					</div>
 

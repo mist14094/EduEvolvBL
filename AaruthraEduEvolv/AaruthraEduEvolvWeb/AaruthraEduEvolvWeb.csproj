@@ -66,6 +66,9 @@
     <Content Include="bin\AaruthraEduEvolvWeb.pdb" />
     <Content Include="bin\NLog.dll" />
     <Content Include="bin\NLog.xml" />
+
+    <Content Include="images\mission.png" />
+    <Content Include="images\vision.png" />
     <Content Include="CourseSubscription.aspx" />
     <Content Include="PasswordReset.aspx" />
     <Content Include="RecoverPassword.aspx" />

@@ -82,12 +82,7 @@
 								<li><a href="aboutus.aspx">About us<span>Who we are</span></a></li>
 								<li><a href="services.aspx">Services<span>What we do</span></a></li>
 								<li><a href="products.aspx">Products<span>What we offer</span></a>
-									<ul>
-										<li><a href="#">products1</a></li>
-										<li><a href="#">products2</a></li>
-										<li><a href="#">products3</a></li>
-										<li><a href="#">products4</a></li>
-									</ul>
+									
 								</li>
 								
 								
@@ -139,10 +134,7 @@
 							<!-- / slide item -->
 							<li>
 								<img src="images/demo/slide4.png" />
-								<div class="flex-caption">
-									<div class="flex-title">Flex Title goes here</div>
-									Captions and cupcakes. Winning combination.
-								</div>
+								
 							</li>
 							<!-- / slide item -->
 						
@@ -161,11 +153,10 @@
 					<div id="main">
 
 						<div class="one_half">
-							<h1>Fluid Layout</h1>
-							<h4>Energetic HTML Template is Completely Fuild Layout with Boxed and Stretched Style</h4>
-							<p>Fluid layout has a max-width range of 1280px wider and can be increased depending on your requirement without any hassle. Stretched Layout will have no shadow effect if applied.</p>
-							<p>Change the layout to sidebar alignments including left/right and fullwidth by adding only one class to the main wrapper element of the layout.</p>
-							<a href="#" class="button large orange"><span>more details</span></a>
+							<h1>Effective Communication</h1>
+							<h4>Education- A form of learning, transfers knowledge and skills of a group of people from one generation to another through teaching, training or research</h4>
+							<p> Education frequently takes place under the guidance of others, but may also be autodidactic (self taught learning). Proudly exclaiming, such an effort has been taken by Veera' Education, to give an autodidactic learning to people nationally and globally who thrive for the need of language, which always has been the stumbling block, for one's growth and success.</p>
+							
 						</div>
 						<!-- /- .one_half -->
 								
@@ -184,31 +175,31 @@
 							<div class="fp-widget">
 								<h3>Flexible Design</h3>
 								<img alt="img" src="images/icon1.png" class="aligncenter" />
-								<p>Maecenas id lorem nec antein nec venenatis condimentum. Curabitur commodo ipsum nibh iaculis.
+								<p>Veera's Educational portal is designed such a way, you can use it in your ease. Either from your laptop, desktop or from your mobile devices.
 								<br>
-								<a href="#">Read more</a></p>
+								
 							</div>
 						</div>
 						<!-- /- .one_fourth -->
 
 						<div class="one_fourth">
 							<div class="fp-widget">
-								<h3>Fluid Layout</h3>
+								<h3>Learn Easy</h3>
 								<img alt="img" src="images/icon2.png" class="aligncenter" />
-								<p>Quisque elit purus id into Vivamus ipsumion dui, lobortis facilisis then placerat in, venenatis vel.
+								<p> We, at Veera's understand your need to learn and be fluent in the language in today's ever changing world.</p>
 								<br>
-								<a href="#">Read more</a></p>	
+								
 							</div>
 						</div>
 						<!-- /- .one_fourth -->
 
 						<div class="one_fourth">
 							<div class="fp-widget">
-								<h3>Extensive Docs</h3>
+								<h3>Speak effectively</h3>
 								<img alt="img" src="images/icon3.png" class="aligncenter" />
-								<p>Aenean egestas tristique justo, nec commodo orci Maecenas ultriciesn enim non luctus malesuada.
+								<p>When you are interested to learn language, it can be for a variety of reasons and we have had people from all walks of life and of all ages coming and making use of our easy self-learning courses.
 								<br>
-								<a href="#">Read more</a></p>
+								</p>
 
 							</div>
 						</div>
@@ -216,11 +207,11 @@
 
 						<div class="one_fourth last">
 							<div class="fp-widget">
-								<h3>Less Weight</h3>
+								<h3>Dedication</h3>
 								<img alt="img" src="images/icon4.png" class="aligncenter" />
-								<p>Phasellus quam ipsum rutrum then aliquam rutrum ligula rictu lorem risus Sed vulputate tincidunt.
+								<p>Veera's intends to help you along the journey with our various outstanding resources and tools, ensuring that you see a noticeable improvement in your grasp of the language
 								<br>
-								<a href="#">Read more</a></p>
+								</p>
 
 							</div>
 						</div>
@@ -284,7 +275,7 @@
             <div class="copyright">
                 <div class="inner">
                     <p>
-                        © 2014 All Rights Reserved - Veera's Education - <a href="http://aaruthra.com/">Powered
+                        © 2015 All Rights Reserved - Veera's Education - <a href="http://aaruthra.com/">Powered
                             By AARUTHRA TECHNOLOGIES</a> - <a href="#">Terms & Conditions</a> - <a href="#">Privacy
                                 Policy</a></p>
                 </div>
@@ -296,6 +287,6 @@
 	</div>
 	<!-- /- #layout(boxed/stretched) -->
     <form id="Form1" runat="server"></form>
-</body>
+
 </body>
 </html>
