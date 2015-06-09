@@ -34,3 +34,15 @@ C:\Users\vramalingam\Desktop\New folder\EduEvolvBL\AaruthraEduEvolv\AaruthraEduE
 C:\Users\vramalingam\Desktop\New folder\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvClasses\obj\Debug\AaruthraEduEvolvBL.csprojResolveAssemblyReference.cache
 C:\Users\vramalingam\Desktop\New folder\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvClasses\obj\Debug\AaruthraEduEvolvBL.dll
 C:\Users\vramalingam\Desktop\New folder\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvClasses\obj\Debug\AaruthraEduEvolvBL.pdb
+G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvClasses\bin\Debug\NLog.config
+G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvClasses\bin\Debug\AaruthraEduEvolvBL.dll
+G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvClasses\bin\Debug\AaruthraEduEvolvBL.pdb
+G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvClasses\bin\Debug\AaruthraEduEvolvConstants.dll
+G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvClasses\bin\Debug\AaruthraEduEvolvDL.dll
+G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvClasses\bin\Debug\NLog.dll
+G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvClasses\bin\Debug\AaruthraEduEvolvConstants.pdb
+G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvClasses\bin\Debug\AaruthraEduEvolvDL.pdb
+G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvClasses\bin\Debug\NLog.xml
+G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvClasses\obj\Debug\AaruthraEduEvolvBL.csprojResolveAssemblyReference.cache
+G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvClasses\obj\Debug\AaruthraEduEvolvBL.dll
+G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvClasses\obj\Debug\AaruthraEduEvolvBL.pdb

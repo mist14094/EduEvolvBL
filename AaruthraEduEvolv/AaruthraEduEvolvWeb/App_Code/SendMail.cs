@@ -1,17 +1,15 @@
 //--------------------------------------------------
-// Project: Inventrace
-// Web site: http:\\www.createalytics.com
+// Project: EduEvolv
+// Web site: http:\\www.aaruthura.com
 //--------------------------------------------------
 
 using System;
 using System.Data;
-using System.Data.SqlClient;
 using System.Net;
 using System.Net.Mail;
 using System.Threading;
 
-
-namespace Aaruthra.Mails
+namespace AaruthraEduEvolvWeb
 {
     public class SendMail
     {

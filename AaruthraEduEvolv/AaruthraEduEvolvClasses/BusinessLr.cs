@@ -179,6 +179,14 @@ namespace AaruthraEduEvolvBL
                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
             return _access.GetCustomerCourse(UserID);
         }
+
+        public String InsertDatabaseLog(string keyName, string keyValues)
+        {
+            _nlog.Trace(message:
+                 this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                 System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            return _access.InsertDatabaseLog(keyName, keyValues);
+        }
     }
 
 }

@@ -66,15 +66,17 @@
     <Content Include="bin\AaruthraEduEvolvWeb.pdb" />
     <Content Include="bin\NLog.dll" />
     <Content Include="bin\NLog.xml" />
-
+    <Content Include="Contact.aspx" />
     <Content Include="images\mission.png" />
     <Content Include="images\vision.png" />
     <Content Include="CourseSubscription.aspx" />
     <Content Include="PasswordReset.aspx" />
+    <Content Include="Receive.aspx" />
     <Content Include="RecoverPassword.aspx" />
     <Content Include="register.aspx" />
     <Content Include="Subscription.aspx" />
     <Content Include="Templates\Registration.html" />
+    <Content Include="Test.aspx" />
     <Content Include="Video.aspx" />
     <Content Include="CourseList.aspx" />
     <Content Include="css\animate.css" />
@@ -249,7 +251,7 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="WebForm1.aspx" />
+    <Content Include="send.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="aboutus.aspx.cs">
@@ -265,6 +267,13 @@
     </Compile>
     <Compile Include="Activation.aspx.designer.cs">
       <DependentUpon>Activation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="CourseSubscription.aspx.cs">
       <DependentUpon>CourseSubscription.aspx</DependentUpon>
@@ -285,6 +294,13 @@
     </Compile>
     <Compile Include="Products.aspx.designer.cs">
       <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Receive.aspx.cs">
+      <DependentUpon>Receive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Receive.aspx.designer.cs">
+      <DependentUpon>Receive.aspx</DependentUpon>
     </Compile>
     <Compile Include="RecoverPassword.aspx.cs">
       <DependentUpon>RecoverPassword.aspx</DependentUpon>
@@ -310,6 +326,13 @@
     </Compile>
     <Compile Include="Subscription.aspx.designer.cs">
       <DependentUpon>Subscription.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
     </Compile>
     <Compile Include="test.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -371,12 +394,12 @@
     <Compile Include="CourseDetails.aspx.designer.cs">
       <DependentUpon>CourseDetails.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="send.aspx.cs">
+      <DependentUpon>send.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="send.aspx.designer.cs">
+      <DependentUpon>send.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

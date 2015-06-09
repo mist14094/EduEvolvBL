@@ -492,5 +492,106 @@ namespace AaruthraEduEvolvDL
         {
             throw new NotImplementedException();
         }
+
+
+        public String InsertDatabaseLog(string keyName, string keyValues)
+        {
+            Nlog.Trace(message: this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" + System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            var dataTable = new DataTable();
+            var selectCommand = new SqlCommand
+            {
+                CommandText = string.Format(_constants.InsertDatabaseLog,keyName,keyValues)
+                ,
+                CommandTimeout = 180,
+            };
+
+
+            var adapter = new SqlDataAdapter(selectCommand);
+            var connection = new SqlConnection(_constants.DefaultConnectionString);
+            selectCommand.Connection = connection;
+            try
+            {
+                connection.Open();
+                adapter.Fill(dataTable);
+                return "1";
+            }
+            catch (Exception ex)
+            {
+                Nlog.Trace(
+                    this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Error", ex);
+                throw ex;
+            }
+            finally
+            {
+                connection.Close();
+                connection.Dispose();
+                Nlog.Trace(message:
+                    this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Leaving");
+            }
+        }
+
+
+        //public string insertUser(string FirstName, string LastName, string CompanyName, string Address, string City, string State, string Pincode, string Phone, string Email, string Username, string Password)
+        //{
+        //    try
+        //    {
+        //        int userId = 0;
+        //        string constr = _constants.DefaultConnectionString;
+        //        using (SqlConnection con = new SqlConnection(constr))
+        //        {
+        //            using (SqlCommand cmd = new SqlCommand("sp_InsertUser"))
+        //            {
+        //                using (SqlDataAdapter sda = new SqlDataAdapter())
+        //                {
+        //                    cmd.CommandType = CommandType.StoredProcedure;
+        //                    cmd.Parameters.AddWithValue("@FirstName", FirstName);
+        //                    cmd.Parameters.AddWithValue("@LastName", LastName);
+        //                    cmd.Parameters.AddWithValue("@CompanyName", CompanyName);
+        //                    cmd.Parameters.AddWithValue("@Address", Address);
+        //                    cmd.Parameters.AddWithValue("@City", City);
+        //                    cmd.Parameters.AddWithValue("@State", State);
+        //                    cmd.Parameters.AddWithValue("@Pincode", Pincode);
+        //                    cmd.Parameters.AddWithValue("@Phone", Phone);
+        //                    cmd.Parameters.AddWithValue("@Email", Email);
+        //                    cmd.Parameters.AddWithValue("@Username", Username);
+        //                    cmd.Parameters.AddWithValue("@Password", Password);
+
+        //                    cmd.Connection = con;
+        //                    con.Open();
+        //                    userId = Convert.ToInt32(cmd.ExecuteScalar());
+        //                    con.Close();
+        //                }
+        //            }
+        //            string message = string.Empty;
+        //            switch (userId)
+        //            {
+        //                case -1:
+        //                    message = "Username already exists.Please choose a different username.";
+        //                    break;
+        //                case -2:
+        //                    message = "Entered email address has already been used.";
+        //                    break;
+        //                case -3:
+        //                    message = "Entered mobile has already been used.";
+        //                    break;
+        //                default:
+        //                    message = "Registration successful. Activation Mail Sent to the registered email ID";
+        //                    sendActivationMail(userId);
+        //                    break;
+        //            }
+        //            return message;
+        //            //ClientScript.RegisterStartupScript(GetType(), "alert", "alert('" + message + "');", true);
+        //        }
+        //    }
+        //    catch (SqlException ex)
+        //    {
+        //        Console.WriteLine("SQL Error" + ex.Message.ToString());
+        //        return "Error";
+        //    }
+        //}
+
+
     }
 }

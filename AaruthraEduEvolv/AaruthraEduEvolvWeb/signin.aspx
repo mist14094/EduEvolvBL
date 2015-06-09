@@ -54,6 +54,8 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server" >
+    
+    <asp:Panel ID="p" runat="server" DefaultButton="btnSubmit">
     <div class="row">
         <section>
     <div class="page-header">
@@ -89,7 +91,7 @@
                             </div>
     <div class="form-group">
         <div class="col-lg-9 col-lg-offset-3">
-            <asp:Button ID="btnSubmit" runat="server" Text="Login" ClientIDMode="Static"
+            <asp:Button ID="btnSubmit" runat="server" Text="Login" ClientIDMode="Static" 
                         class="btn btn-primary" onclick="btnSubmit_Click1"/>
             <%--<button type="submit" class="btn btn-primary" runat="server" OnServerClick="Submit_Click" CausesValidation="True">
                 Login</button>--%>
@@ -98,5 +100,5 @@
     </div>
     </section>
     </div>
-    
+    </asp:Panel>
 </asp:Content>

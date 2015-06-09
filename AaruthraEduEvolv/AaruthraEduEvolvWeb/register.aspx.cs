@@ -8,7 +8,7 @@ using System.Web;
 using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Aaruthra.Mails;
+using AaruthraEduEvolvBL;
 
 public partial class register : System.Web.UI.Page
 {
@@ -16,75 +16,17 @@ public partial class register : System.Web.UI.Page
     {
 
     }
-    [WebMethod]
-    public string insertUser(string FirstName, string LastName, string CompanyName, string Address, string City, string State, string Pincode, string Phone, string Email, string Username, string Password)
-    {
-        try
-        {
-            int userId = 0;
-            string constr = ConfigurationManager.ConnectionStrings["Connstring"].ConnectionString;
-            using (SqlConnection con = new SqlConnection(constr))
-            {
-                using (SqlCommand cmd = new SqlCommand("sp_InsertUser"))
-                {
-                    using (SqlDataAdapter sda = new SqlDataAdapter())
-                    {
-                        cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.AddWithValue("@FirstName", FirstName);
-                        cmd.Parameters.AddWithValue("@LastName", LastName);
-                        cmd.Parameters.AddWithValue("@CompanyName", CompanyName);
-                        cmd.Parameters.AddWithValue("@Address", Address);
-                        cmd.Parameters.AddWithValue("@City", City);
-                        cmd.Parameters.AddWithValue("@State", State);
-                        cmd.Parameters.AddWithValue("@Pincode", Pincode);
-                        cmd.Parameters.AddWithValue("@Phone", Phone);
-                        cmd.Parameters.AddWithValue("@Email", Email);
-                        cmd.Parameters.AddWithValue("@Username", Username);
-                        cmd.Parameters.AddWithValue("@Password", Password);
-
-                        cmd.Connection = con;
-                        con.Open();
-                        userId = Convert.ToInt32(cmd.ExecuteScalar());
-                        con.Close();
-                    }
-                }
-                string message = string.Empty;
-                switch (userId)
-                {
-                    case -1:
-                        message = "Username already exists.Please choose a different username.";
-                        break;
-                    case -2:
-                        message = "Entered email address has already been used.";
-                        break;
-                    case -3:
-                        message = "Entered mobile has already been used.";
-                        break;
-                    default:
-                        message = "Registration successful. Activation Mail Sent to the registered email ID";
-                        sendActivationMail(userId);
-                        break;
-                }
-                return message;
-                //ClientScript.RegisterStartupScript(GetType(), "alert", "alert('" + message + "');", true);
-            }
-        }
-        catch (SqlException ex)
-        {
-            Console.WriteLine("SQL Error" + ex.Message.ToString());
-            return "Error";
-        }
-    }
-
+    
     private void sendActivationMail(int userId)
     {
         var bl = new AaruthraEduEvolvBL.BusinessLr();
+        var sendMail = new AaruthraEduEvolvBL.SendMail();
         DataSet ds  =  bl.sendActivationMail(userId);
         try
         {
             string s = Request.Url.Scheme + System.Uri.SchemeDelimiter + Request.Url.Host +
                        (Request.Url.IsDefaultPort ? "" : ":" + Request.Url.Port);
-           string mailcon = SendMail.BuildMail(ds,"Activation",s);
+            string mailcon = sendMail.BuildMail(ds, "Activation", s);
             DataTable DtMailContent = ds.Tables[0];
             DataTable DtUserData= ds.Tables[1];
             
@@ -100,7 +42,8 @@ public partial class register : System.Web.UI.Page
 
     private void sendMailContemt(string header, string body, string to)
     {
-        SendMail.SendMailNow(to, header, body, true);
+        var mail = new SendMail();
+        mail.SendMailNow(to, header, body, true);
     }
     public void insertUser()
     {
@@ -130,13 +73,13 @@ public partial class register : System.Web.UI.Page
                         message = "Username already exists. Please choose a different username.";
                         break;
                     case -2:
-                        message = "Entered email address has already been used.";
+                        message = "Email address has been already registered";
                         break;
                     case -3:
-                        message = "Entered mobile has already been used.";
+                        message = "Mobile number has been already registered";
                         break;
                     default:
-                         message = "Registration successful. Activation Mail Sent to the registered email ID";
+                         message = "Registration successful. Activation Mail has been sent!";
                         sendActivationMail(userId);
                         break;
                 }

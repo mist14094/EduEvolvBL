@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 	<div id="subheader">
 				<div class="inner">
-					<h1>What we have for you?</h1>
+					<h1>What we offer </h1>
 				
 				</div>
 			</div>
@@ -22,60 +22,93 @@
 								
 								<!-- .post-meta -->
 
-								
+	<p>Nowadays, Technology is the effective tool in learning. Education has, in fact given various
+
+opportunities for the learners in a form of distance learning various steams. Online Education is 
+
+one among them, which is portal for the learners to make learning easy. It is characterised by 
+
+learning, with the assistance of the internet and a personal computer. It fulfills the distance 
+
+between the teachers and the learners, which distinguishes it from face to face education. 
+
+Learning a language is an art which requires its own time. Contributing this art for a particular 
+
+period (i.e) 3-4 months may not fulfill the learning process.</p>
+<br/><p>							
 
 								<figure>
 									<a href="#"><img src="images/demo/coreden_1.png" /></a>
 								</figure>
 	
 								<section>
-									<p>Nam dapibus dui eu tortor egestas auctor. Cras eu elit a tellus interdum iaculis euismod sed dolor. Donec nulla orci, varius sit amet volutpat eget, lobortis at sapien. Donec scelerisque neque vel ligula accumsan venenatis. Nulla in orci enim, ac posuere mauris. Aliquam euismod hendrerit tortor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-	
-									<p>Sed vehicula aliquet mauris. Maecenas sem nibh, laoreet vel pellentesque luctus, fringilla a enim? Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas tempor arcu eget urna consequat quis venenatis arcu venenatis. Cras imperdiet, erat at laoreet varius, erat massa fringilla arcu, vel semper sem erat eget est. Ut placerat cursus scelerisque. Mauris suscipit convallis nulla. Aliquam id nunc ut tortor condimentum egestas et eget urna. Suspendisse vel sapien quis mauris scelerisque gravida at nec massa. Nam rutrum gravida urna, vitae elementum elit consectetur vel. Phasellus nulla sapien, hendrerit sed venenatis sit amet, interdum eu urna. Pellentesque a egestas tellus. In at eros ornare augue rutrum adipiscing. Suspendisse potenti. Integer viverra, est eget commodo sollicitudin, velit mauris consectetur leo, eget placerat lectus risus ac nisi.</p>
-								
+			<br/>
+            <p>
+Hence, we are proud and glad to offer our consumes the language assistance through this online 
 
-								</section>
+teaching which lasts for a long time. Veera’s Education has profoundly decided to focus on 
+
+various sectors to allow English and Hindi languages, become an effective tool for 
+
+communication in India and worldwide. We offer different levels in English and Hindi subjects to 
+
+make the communication more effective and easier.
+<p>
+
+
+<br/>
+<h5 style="font-style: oblique">Product Overview</h5>
+<div style="margin-left: 20px;">
+
+1. Pronoun
+
+                            <br />
+                            2. Pronoun with supportive verbs
+
+                            <br />
+                            3. Supportive with sentences.
+
+                            <br />
+                            4. Sounds practice
+
+                            <br />
+                            5. (Kay) - Preposition
+                            <br />
+                            6. Want - (Chaheeyey) 
+                            <br />
+                            7. Present tense - Practical  exercise 
+                            <br />
+                            8. Past tense - Supportive verb 
+                            <br />
+                            9. Past tense - Sentences
+                            <br />
+                            10. Past tense - Practical exercise
+                            <br />
+                            11. Future tense - Supportive verb
+
+                            <br />
+                            12. Future tense - Sentences
+
+                            <br />
+                            13. Future tense - Practical exercise
+
+                            <br />
+                            14. Conversation
+
+                            <br />
+                            15. Tense Conversation
+
+                            <br />
+                            16. Vocabularies
+							</div>	</section>
 								<!-- .post_content -->
 							</article>
                             
-                            <article class="post2">
-
-								
-								<!-- .post-meta -->
-
 								
 
-								<figure>
-									<a href="#"><img src="images/demo/coreden_1.png" /></a>
-								</figure>
-	
-								<section>
-									<p>Nam dapibus dui eu tortor egestas auctor. Cras eu elit a tellus interdum iaculis euismod sed dolor. Donec nulla orci, varius sit amet volutpat eget, lobortis at sapien. Donec scelerisque neque vel ligula accumsan venenatis. Nulla in orci enim, ac posuere mauris. Aliquam euismod hendrerit tortor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-	
-									<p>Sed vehicula aliquet mauris. Maecenas sem nibh, laoreet vel pellentesque luctus, fringilla a enim? Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas tempor arcu eget urna consequat quis venenatis arcu venenatis. Cras imperdiet, erat at laoreet varius, erat massa fringilla arcu, vel semper sem erat eget est. Ut placerat cursus scelerisque. Mauris suscipit convallis nulla. Aliquam id nunc ut tortor condimentum egestas et eget urna. Suspendisse vel sapien quis mauris scelerisque gravida at nec massa. Nam rutrum gravida urna, vitae elementum elit consectetur vel. Phasellus nulla sapien, hendrerit sed venenatis sit amet, interdum eu urna. Pellentesque a egestas tellus. In at eros ornare augue rutrum adipiscing. Suspendisse potenti. Integer viverra, est eget commodo sollicitudin, velit mauris consectetur leo, eget placerat lectus risus ac nisi.</p>
-								
-
-								</section>
-								<!-- .post_content -->
-							</article>
-							<!-- .post2 -->
-
-						
-							<!-- .post2 -->
-
-						
-							<!-- .post2 -->
-					
-						</div>
-						<!-- .content -->
-						
-					</div>
-					<!-- #main -->
-					
-					
-					<!-- #sidebar -->
-
+							
 					<div class="clear"></div>
-				</div>
+				</div></div></div>
+			</div>
 </asp:Content>
 

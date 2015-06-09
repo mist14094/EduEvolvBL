@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="BusinessLr.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SendMail.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="NLog.config">

@@ -49,5 +49,7 @@ namespace AaruthraEduEvolvConstants
         public string sp_RequestPasswordChange = "sp_CheckPasswordReset";
 
         public string sp_ChangePassword = "sp_ChangePassword";
+
+        public string InsertDatabaseLog = "INSERT INTO [rasucas].[DataBaseLog]([KeyName],[KeyValue])VALUES ('{0}','{1}')";
     }
 }
