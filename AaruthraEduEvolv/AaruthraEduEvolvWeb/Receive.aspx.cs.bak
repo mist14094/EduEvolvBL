@@ -1,0 +1,44 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using AaruthraEduEvolvBL;
+using System.Text;
+
+namespace AaruthraEduEvolvWeb
+{
+    public partial class Receive : System.Web.UI.Page
+    {
+        AaruthraEduEvolvBL.BusinessLr Lr= new BusinessLr();
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            string strDatetime = DateTime.Now.ToString("yyyyMMddhhmmsss");
+           
+
+            foreach (string key in Request.Form.Keys)
+            {
+                 try
+            {
+                Response.Write(key);
+                string response = Lr.InsertDatabaseLog(key, Request.Form[key], strDatetime);
+            }
+             catch (Exception ex )
+                 {
+                     string response = Lr.InsertDatabaseLog("Error", ex.Message.Substring(0,50), strDatetime); 
+
+                 }
+            //byte[] byteKey = Encoding.UTF8.GetBytes("88ca0095571ad9efb65934fc579fedab");
+            //string regitPWD = this.Request.Form["mac"].ToString(); 
+            //HMACSHA1 hmac = new HMACSHA1(byteKey);  
+            //byte[] bytePWD =&nbsp;
+            //Encoding.UTF8.GetBytes(regitPWD); 
+            //byte[] byteHash = hmac.ComputeHash(bytePWD);
+            //this.txtEncrypted.Text = Convert.ToBase64String(byteHash);
+            }
+           
+        }
+    }
+}

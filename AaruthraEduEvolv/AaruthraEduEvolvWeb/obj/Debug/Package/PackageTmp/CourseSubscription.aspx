@@ -150,9 +150,8 @@
                     <img src="img/vlogo.png" />
                 </a>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            < class="collapse navbar-collapse" id="bs-example-navbar-collapse">
                 <ul class="nav navbar-nav navbar-right pad-right" style="color: white">
+                    
             Welcome <asp:Label runat="server" ID="lblUserName"></asp:Label>
                     <a href="CourseDetails.aspx" role="button" class="btn btn-info navbar-btn" >Home</a> 
                     <asp:Button runat="server" ID="btnLogOff" role="button" 
@@ -166,15 +165,20 @@
     </nav>
     <div class="container">
         <div class="row hidden" id="lenscap-promo">
-            <div class="alert text-center" role="alert" runat="server" id="header">
-                <%-- <a  href=""><strong>Title of the video</strong>!</a>--%>
+            <div   class="alert" role="alert" runat="server" id="alert">
+               
             </div>
         </div>
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
-                <div class="visible-desktop" style="height: 12px">
+                <div>
+                    <h1> Become a member. Discover What you can learn.</h1><br/>
+join now for unlimited access to the entire library of video courses.
                 </div>
-                <asp:ListView ID="ListView1" GroupItemCount="4" runat="server" DataKeyNames="CourseID"  >
+                <div class="visible-desktop" style="height: 12px">
+                   
+                </div>
+                <asp:ListView ID="ListView1" GroupItemCount="4" runat="server" DataKeyNames="CourseID,Fees"  >
                     <LayoutTemplate>
                         <table cellpadding="2" runat="server" id="tblProducts" style="height: 320px">
                             <tr runat="server" id="groupPlaceholder">
@@ -189,13 +193,30 @@
                     </GroupTemplate>
                     <ItemTemplate>
                         <td id="Td1" valign="top" align="center" style="width: 300px;" runat="server">
-                             <asp:ImageButton ID="ProductImage" runat="server"  style="margin-bottom:10px" Width="75%" 
-           ImageUrl='<% #Eval("Thumbnail")%>' PostBackUrl='<% # string.Concat("CourseList.aspx?CourseID= " , Eval("CourseID"))%>' />
-           <br />
-                            <div style="font-weight: bold">
-                                <asp:HyperLink ID="ProductLink" runat="server" Text='<% #Eval("CourseName")%>' Target="_blank"
-                                    NavigateUrl='<% # string.Concat("subscribe.aspx?CourseID=" , Eval("CourseID"))%>' /></div>
+                        <div style="font-weight: bold">
+                                <asp:Label ID="ProductLink" runat="server" Text='<% #Eval("CourseName")%>'/></div>
                             <br />
+                            <div>
+                             <asp:Image ID="ProductImage" runat="server"  style="margin-bottom:10px" Width="75%" 
+           ImageUrl='<% #Eval("Thumbnail")%>' />
+           <br />
+                            
+                                <asp:Label ID="Desc" runat="server" Text='<% #Eval("Description")%>'></asp:Label>
+                                <br/>
+                            </div>
+                            <div style="width:80%; text-align: center">
+                                <asp:Label ID="Label1" runat="server" Text='<% #string.Concat(Eval("Fees")," INR")%>'></asp:Label>
+                                <br/>
+                                <asp:Button ID="Button1" runat="server" Text='Subscribe' CommandArgument='<%# Eval("CourseID") %>' Visible='<%# SubscripeValue(Eval("Status")) %>' /><br /> 
+                            </div>
+                            <div>
+                            <br/>
+                            <asp:Label ID="Label2" runat="server" Text='Activated On :' Visible='<%# !SubscripeValue(Eval("Status")) %>'></asp:Label>
+                                <asp:Label ID="ActivationDate" runat="server" Text='<% #Eval("ActivationDate")%>' Visible='<%# !SubscripeValue(Eval("Status")) %>'></asp:Label>
+                                <br/>
+                                <asp:Label ID="Label3" runat="server" Text='Expired On :' Visible='<%# !SubscripeValue(Eval("Status")) %>'></asp:Label>
+                                <asp:Label ID="ExpiredOn" runat="server" Text='<% #Eval("ExpiredOn")%>' Visible='<%# !SubscripeValue(Eval("Status")) %>'></asp:Label>
+                            </div>
                             <br />
                         </td>
                     </ItemTemplate>

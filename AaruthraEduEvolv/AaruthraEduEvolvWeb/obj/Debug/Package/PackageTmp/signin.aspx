@@ -69,7 +69,7 @@
         <label class="col-lg-3 control-label">
             Login ID:</label>
         <div class="col-lg-5">
-            <asp:TextBox ID="txt_username"  ClientIDMode="Static" runat="server" type="text" name="txt_username" CssClass="form-control"  placeholder="User Name"></asp:TextBox>
+            <asp:TextBox ID="txt_username"   runat="server" type="text" name="txt_username" CssClass="form-control" ClientIDMode="Static" placeholder="User Name"></asp:TextBox>
             <%--<input type="text" class="form-control" name="txt_username" />--%>
         </div>
     </div>

@@ -494,13 +494,13 @@ namespace AaruthraEduEvolvDL
         }
 
 
-        public String InsertDatabaseLog(string keyName, string keyValues)
+        public String InsertDatabaseLog(string keyName, string keyValues,string dt)
         {
             Nlog.Trace(message: this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" + System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
             var dataTable = new DataTable();
             var selectCommand = new SqlCommand
             {
-                CommandText = string.Format(_constants.InsertDatabaseLog,keyName,keyValues)
+                CommandText = string.Format(_constants.InsertDatabaseLog,keyName,keyValues,dt)
                 ,
                 CommandTimeout = 180,
             };
@@ -593,5 +593,271 @@ namespace AaruthraEduEvolvDL
         //}
 
 
+
+        public DataSet CheckUserSubscriptions(string userName)
+        {
+            Nlog.Trace(message: this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" + System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            var dataTable = new DataTable();
+            var selectCommand = new SqlCommand
+            {
+                CommandText = string.Format(_constants.sp_CheckUserSubscriptions),
+                CommandType = CommandType.StoredProcedure,
+                CommandTimeout = 180,
+            };
+            selectCommand.Parameters.AddWithValue("@Username", userName);
+            var dataSet = new DataSet();
+            var adapter = new SqlDataAdapter(selectCommand);
+            var connection = new SqlConnection(_constants.DefaultConnectionString);
+            selectCommand.Connection = connection;
+            try
+            {
+                connection.Open();
+                adapter.Fill(dataSet);
+                return dataSet;
+            }
+            catch (Exception ex)
+            {
+                Nlog.Trace(
+                    this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Error", ex);
+                throw ex;
+            }
+            finally
+            {
+                connection.Close();
+                connection.Dispose();
+                Nlog.Trace(message:
+                    this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Leaving");
+            }
+        }
+
+        public DataTable GetAllTransactions()
+        {
+            Nlog.Trace(message: this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" + System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            var dataTable = new DataTable();
+            var selectCommand = new SqlCommand
+            {
+                CommandText = string.Format(_constants.GetAllTransactions),
+                CommandTimeout = 180,
+            };
+
+
+            var adapter = new SqlDataAdapter(selectCommand);
+            var connection = new SqlConnection(_constants.DefaultConnectionString);
+            selectCommand.Connection = connection;
+            try
+            {
+                connection.Open();
+                adapter.Fill(dataTable);
+                return dataTable;
+            }
+            catch (Exception ex)
+            {
+                Nlog.Trace(
+                    this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Error", ex);
+                throw ex;
+            }
+            finally
+            {
+                connection.Close();
+                connection.Dispose();
+                Nlog.Trace(message:
+                    this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Leaving");
+            }
+        }
+
+
+        public DataTable GetTransaction(string TransactionMaster)
+        {
+            Nlog.Trace(message: this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" + System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            var dataTable = new DataTable();
+            var selectCommand = new SqlCommand
+            {
+                CommandText = string.Format(_constants.GetTranscation, TransactionMaster),
+                CommandTimeout = 180,
+            };
+
+
+            var adapter = new SqlDataAdapter(selectCommand);
+            var connection = new SqlConnection(_constants.DefaultConnectionString);
+            selectCommand.Connection = connection;
+            try
+            {
+                connection.Open();
+                adapter.Fill(dataTable);
+                return dataTable;
+            }
+            catch (Exception ex)
+            {
+                Nlog.Trace(
+                    this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Error", ex);
+                throw ex;
+            }
+            finally
+            {
+                connection.Close();
+                connection.Dispose();
+                Nlog.Trace(message:
+                    this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Leaving");
+            }
+        }
+
+
+        public DataSet MakeTransaction(int UserID, string CourseID)
+        {
+            Nlog.Trace(message: this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" + System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            var dataTable = new DataTable();
+            var selectCommand = new SqlCommand
+            {
+                CommandText = string.Format(_constants.sp_MakeTranscation),
+                CommandType = CommandType.StoredProcedure,
+                CommandTimeout = 180,
+            };
+            selectCommand.Parameters.AddWithValue("@UserID", UserID);
+            selectCommand.Parameters.AddWithValue("@CourseID", CourseID);
+            var dataSet = new DataSet();
+            var adapter = new SqlDataAdapter(selectCommand);
+            var connection = new SqlConnection(_constants.DefaultConnectionString);
+            selectCommand.Connection = connection;
+            try
+            {
+                connection.Open();
+                adapter.Fill(dataSet);
+                return dataSet;
+            }
+            catch (Exception ex)
+            {
+                Nlog.Trace(
+                    this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Error", ex);
+                throw ex;
+            }
+            finally
+            {
+                connection.Close();
+                connection.Dispose();
+                Nlog.Trace(message:
+                    this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Leaving");
+            }
+        }
+
+        public DataTable GetAllSubscriptionRequests()
+        {
+            Nlog.Trace(message: this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" + System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            var dataTable = new DataTable();
+            var selectCommand = new SqlCommand
+            {
+                CommandText = string.Format(_constants.GetAllSubscriptionRequests),
+                CommandTimeout = 180,
+            };
+
+
+            var adapter = new SqlDataAdapter(selectCommand);
+            var connection = new SqlConnection(_constants.DefaultConnectionString);
+            selectCommand.Connection = connection;
+            try
+            {
+                connection.Open();
+                adapter.Fill(dataTable);
+                return dataTable;
+            }
+            catch (Exception ex)
+            {
+                Nlog.Trace(
+                    this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Error", ex);
+                throw ex;
+            }
+            finally
+            {
+                connection.Close();
+                connection.Dispose();
+                Nlog.Trace(message:
+                    this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Leaving");
+            }
+
+        }
+        public DataTable CompleteTransaction(string strTransactionID)
+        {
+            Nlog.Trace(message: this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" + System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            var dataTable = new DataTable();
+            var selectCommand = new SqlCommand
+            {
+                CommandText = string.Format(_constants.CompleteTransaction, strTransactionID),
+                CommandTimeout = 180,
+            };
+
+
+            var adapter = new SqlDataAdapter(selectCommand);
+            var connection = new SqlConnection(_constants.DefaultConnectionString);
+            selectCommand.Connection = connection;
+            try
+            {
+                connection.Open();
+                adapter.Fill(dataTable);
+                return dataTable;
+            }
+            catch (Exception ex)
+            {
+                Nlog.Trace(
+                    this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Error", ex);
+                throw ex;
+            }
+            finally
+            {
+                connection.Close();
+                connection.Dispose();
+                Nlog.Trace(message:
+                    this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Leaving");
+            }
+        }
+
+
+        public DataTable MakeSubscription(string strTransactionID)
+        {
+            Nlog.Trace(message: this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" + System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            var dataTable = new DataTable();
+            var selectCommand = new SqlCommand
+            {
+                CommandText = string.Format(_constants.sp_MakeSubscriptions),
+                CommandType = CommandType.StoredProcedure,
+                CommandTimeout = 180,
+            };
+            //selectCommand.Parameters.AddWithValue("@UserID", UserID);
+            selectCommand.Parameters.AddWithValue("@TransactionID", strTransactionID);
+            var adapter = new SqlDataAdapter(selectCommand);
+            var connection = new SqlConnection(_constants.DefaultConnectionString);
+            selectCommand.Connection = connection;
+            try
+            {
+                connection.Open();
+                adapter.Fill(dataTable);
+                return dataTable;
+            }
+            catch (Exception ex)
+            {
+                Nlog.Trace(
+                    this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Error", ex);
+                throw ex;
+            }
+            finally
+            {
+                connection.Close();
+                connection.Dispose();
+                Nlog.Trace(message:
+                    this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Leaving");
+            }
+        }
     }
 }

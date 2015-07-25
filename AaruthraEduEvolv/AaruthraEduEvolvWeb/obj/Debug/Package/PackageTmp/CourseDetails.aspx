@@ -152,6 +152,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             < class="collapse navbar-collapse" id="bs-example-navbar-collapse">
                 <ul class="nav navbar-nav navbar-right pad-right" style="color: white">
+                    <asp:HyperLink ID="HyperLink1" runat="server" Text="Subscription" NavigateUrl="CourseSubscription.aspx"></asp:HyperLink> &nbsp;&nbsp;&nbsp;
             Welcome <asp:Label runat="server" ID="lblUserName"></asp:Label>
                     <a href="CourseDetails.aspx" role="button" class="btn btn-info navbar-btn" >Home</a> 
                     <asp:Button runat="server" ID="btnLogOff" role="button" 
@@ -199,7 +200,7 @@
                         </td>
                     </ItemTemplate>
                     <EmptyDataTemplate>
-                      <center> <b>There is no active course set for you, You can buy more course.<br/> <asp:Button runat="server" ID="bu" Text="Buy More"/></b> </center>
+                      <center> <b>There is no active course set for you, You can buy more course.<br/> <asp:Button runat="server" ID="btnBuyPlan" Text="Buy More" OnClick="btnBuyPlan_onClickEvent" /></b> </center>
                     </EmptyDataTemplate>
                 </asp:ListView>
                

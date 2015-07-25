@@ -180,12 +180,70 @@ namespace AaruthraEduEvolvBL
             return _access.GetCustomerCourse(UserID);
         }
 
-        public String InsertDatabaseLog(string keyName, string keyValues)
+        public String InsertDatabaseLog(string keyName, string keyValues,string dt)
         {
             _nlog.Trace(message:
                  this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
                  System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
-            return _access.InsertDatabaseLog(keyName, keyValues);
+            return _access.InsertDatabaseLog(keyName, keyValues, dt);
+        }
+
+        public DataSet CheckUserSubscriptions(string userName)
+        {
+            _nlog.Trace(message:
+                this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            return _access.CheckUserSubscriptions(userName);
+        }  
+        
+        public DataTable GetTransaction(string TransactionMaster)
+        {
+            _nlog.Trace(message:
+                this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            return _access.GetTransaction(TransactionMaster);
+        }
+
+        public DataTable GetAllTransactions()
+        {
+            _nlog.Trace(message:
+                this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            return _access.GetAllTransactions();
+        }
+
+        public DataSet MakeTransaction(int UserID, string CourseID)
+        {
+            _nlog.Trace(message:
+               this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+               System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            return _access.MakeTransaction(UserID,CourseID);
+        }
+
+        public DataTable GetAllSubscriptionRequests()
+        {
+            _nlog.Trace(message:
+              this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+              System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            return _access.GetAllSubscriptionRequests();
+        }
+
+
+
+        public DataTable CompleteTransaction(string strTransactionID)
+        {
+            _nlog.Trace(message:
+                this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            return _access.CompleteTransaction(strTransactionID);
+        }
+
+        public DataTable MakeSubscription(string strTransactionID)
+        {
+            _nlog.Trace(message:
+                this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            return _access.MakeSubscription(strTransactionID);
         }
     }
 

@@ -50,6 +50,27 @@ namespace AaruthraEduEvolvConstants
 
         public string sp_ChangePassword = "sp_ChangePassword";
 
-        public string InsertDatabaseLog = "INSERT INTO [rasucas].[DataBaseLog]([KeyName],[KeyValue])VALUES ('{0}','{1}')";
+        public string InsertDatabaseLog = "INSERT INTO [rasucas].[DataBaseLog]([KeyName],[KeyValue],TransactionMaster)VALUES ('{0}','{1}','{2}')";
+
+        public string sp_CheckUserSubscriptions = "sp_CheckUserSubscriptions";
+
+
+        public string GetTranscation =
+            "SELECT * FROM (SELECT [TransactionMaster], [KeyName], [KeyValue]FROM  [DataBaseLog] WHERE [TransactionMaster]='{0}' ) AS InitialValue   PIVOT  (MAX  ([KeyValue]) FOR [keyname] IN (custom_fields,amount,offer_title,offer_slug,buyer_name,unit_price,status,mac,quantity,payment_id,variants,fees,currency,buyer_phone,buyer,verified)) AS pivotValue";
+
+        public string GetAllTransactions = "SELECT * FROM (SELECT [TransactionMaster], [KeyName], [KeyValue]FROM  [DataBaseLog] ) AS InitialValue   PIVOT  (MAX  ([KeyValue]) FOR [keyname] IN (custom_fields,amount,offer_title,offer_slug,buyer_name,unit_price,status,mac,quantity,payment_id,variants,fees,currency,buyer_phone,buyer,verified)) AS pivotValue";
+
+        public string sp_MakeTranscation = "sp_MakeTranscation";
+        public string GetAllSubscriptionRequests = @"SELECT * FROM (
+        SELECT [TransactionMaster], [KeyName], [KeyValue]FROM  [DataBaseLog] ) AS InitialValue
+        PIVOT
+        (MAX
+        ([KeyValue]) FOR [keyname] IN (payment_id,custom_fields,amount,offer_title,offer_slug,buyer_name,status,verified,TransactionID)) AS pivotValue
+        ORDER BY verified";
+
+        public string CompleteTransaction =
+           "  UPDATE TransactionMaster SET IsCompleteTransaction=1 WHERE TransactionID='{0}'";
+
+        public string sp_MakeSubscriptions = "sp_MakeSubscriptions";
     }
 }

@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AaruthraEduEvolvBL", "AaruthraEduEvolvClasses\AaruthraEduEvolvBL.csproj", "{E12E96DF-4E6E-477E-8269-08714ED4E086}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AaruthraEduEvolvDL", "AaruthraEduEvolvDL\AaruthraEduEvolvDL.csproj", "{2662933A-6B2C-4B2D-B4EF-1817E5DEFE69}"

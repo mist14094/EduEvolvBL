@@ -902,6 +902,12 @@
     padding-top: 0;
     text-align: left;
   }
+  .form-horizontal .control-Rlabel {
+    float: none;
+    width: auto;
+    padding-top: 0;
+    text-align: right;
+  }
   .form-horizontal .controls {
     margin-left: 0;
   }
