@@ -99,3 +99,4 @@ C:\Users\vramalingam\Desktop\EduEvolv\Latest Rasukumar\AaruthraEduEvolv_150616\A
 C:\Users\vramalingam\Desktop\EduEvolv\Latest Rasukumar\AaruthraEduEvolv_150616\AaruthraEduEvolv\AaruthraEduEvolv\AaruthraEduEvolvClasses\obj\Debug\AaruthraEduEvolvBL.csprojResolveAssemblyReference.cache
 C:\Users\vramalingam\Desktop\EduEvolv\Latest Rasukumar\AaruthraEduEvolv_150616\AaruthraEduEvolv\AaruthraEduEvolv\AaruthraEduEvolvClasses\obj\Debug\AaruthraEduEvolvBL.dll
 C:\Users\vramalingam\Desktop\EduEvolv\Latest Rasukumar\AaruthraEduEvolv_150616\AaruthraEduEvolv\AaruthraEduEvolv\AaruthraEduEvolvClasses\obj\Debug\AaruthraEduEvolvBL.pdb
+G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvClasses\bin\Debug\Newtonsoft.Json.dll

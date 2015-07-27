@@ -97,3 +97,4 @@ C:\Users\vramalingam\Desktop\EduEvolv\Latest Rasukumar\AaruthraEduEvolv_150616\A
 C:\Users\vramalingam\Desktop\EduEvolv\Latest Rasukumar\AaruthraEduEvolv_150616\AaruthraEduEvolv\AaruthraEduEvolv\AaruthraEduEvolvWeb\obj\Debug\AaruthraEduEvolvWeb.csprojResolveAssemblyReference.cache
 C:\Users\vramalingam\Desktop\EduEvolv\Latest Rasukumar\AaruthraEduEvolv_150616\AaruthraEduEvolv\AaruthraEduEvolv\AaruthraEduEvolvWeb\obj\Debug\AaruthraEduEvolvWeb.dll
 C:\Users\vramalingam\Desktop\EduEvolv\Latest Rasukumar\AaruthraEduEvolv_150616\AaruthraEduEvolv\AaruthraEduEvolv\AaruthraEduEvolvWeb\obj\Debug\AaruthraEduEvolvWeb.pdb
+G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\AaruthraEduEvolvWeb.dll.config
