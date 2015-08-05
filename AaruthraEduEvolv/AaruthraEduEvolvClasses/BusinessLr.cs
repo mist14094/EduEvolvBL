@@ -53,8 +53,8 @@ namespace AaruthraEduEvolvBL
             if (csCustomer != null)
             {
                 csCustomer.Courses = GetUserSubscription(csCustomer.intUserID.ToString(CultureInfo.InvariantCulture));
-             
-            }  
+
+            }
             return csCustomer;
         }
 
@@ -120,7 +120,7 @@ namespace AaruthraEduEvolvBL
                this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
                System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
             return _access.insertUser(FirstName, LastName, CompanyName, Address, City, State, Pincode, Phone, Email, Username, Password);
-        
+
         }
 
         public DataSet sendActivationMail(int userId)
@@ -137,7 +137,7 @@ namespace AaruthraEduEvolvBL
              this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
              System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
             return _access.ActivateUser(code);
-        
+
         }
 
         public int ressetPassword(string EmailID)
@@ -180,7 +180,7 @@ namespace AaruthraEduEvolvBL
             return _access.GetCustomerCourse(UserID);
         }
 
-        public String InsertDatabaseLog(string keyName, string keyValues,string dt)
+        public String InsertDatabaseLog(string keyName, string keyValues, string dt)
         {
             _nlog.Trace(message:
                  this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
@@ -194,8 +194,8 @@ namespace AaruthraEduEvolvBL
                 this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
                 System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
             return _access.CheckUserSubscriptions(userName);
-        }  
-        
+        }
+
         public DataTable GetTransaction(string TransactionMaster)
         {
             _nlog.Trace(message:
@@ -217,7 +217,7 @@ namespace AaruthraEduEvolvBL
             _nlog.Trace(message:
                this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
                System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
-            return _access.MakeTransaction(UserID,CourseID);
+            return _access.MakeTransaction(UserID, CourseID);
         }
 
         public DataTable GetAllSubscriptionRequests()
@@ -244,6 +244,45 @@ namespace AaruthraEduEvolvBL
                 this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
                 System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
             return _access.MakeSubscription(strTransactionID);
+        }
+
+        public DataTable GetAllSubscription(string strUserID)
+        {
+            _nlog.Trace(message:
+                this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            return _access.GetAllSubscription(strUserID);
+        }
+
+        public DataTable ManualActivation(string UserID, DateTime ExpirationDate)
+        {
+            _nlog.Trace(message:
+             this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+             System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            return _access.ManualActivation(UserID, ExpirationDate);
+        }
+
+        public DataSet GetSubscriptionDetails(int intSubscription)
+        {
+            _nlog.Trace(message:
+        this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+        System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            return _access.GetSubscriptionDetails(intSubscription);
+        }
+
+        public DataSet UpdateSubscription(DateTime ExpirationDate, int SubscriptionID, int UserID, int CourseID)
+        {
+            _nlog.Trace(message:
+     this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+     System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            return _access.UpdateSubscription(ExpirationDate, SubscriptionID, UserID, CourseID);
+        }
+        public DataSet DeleteSubscription(DateTime ExpirationDate, int SubscriptionID, int UserID, int CourseID)
+        {
+            _nlog.Trace(message:
+     this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+     System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            return _access.DeleteSubscription(ExpirationDate, SubscriptionID, UserID, CourseID);
         }
     }
 

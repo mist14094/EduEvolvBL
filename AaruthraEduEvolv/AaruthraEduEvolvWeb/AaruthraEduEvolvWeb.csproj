@@ -20,6 +20,10 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -64,8 +68,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="403.aspx" />
     <Content Include="aboutus.aspx" />
     <Content Include="Activation.aspx" />
+    <Content Include="ChangeSubscription.aspx" />
     <Content Include="bin\AaruthraEduEvolvBL.dll" />
     <Content Include="bin\AaruthraEduEvolvBL.pdb" />
     <Content Include="bin\AaruthraEduEvolvConstants.dll" />
@@ -77,7 +83,13 @@
     <Content Include="bin\NLog.dll" />
     <Content Include="bin\NLog.xml" />
     <Content Include="Contact.aspx" />
-    <Content Include="VerifyPayments.aspx" />
+    <Content Include="AddSubscription.aspx" />
+    <Content Include="images\403.gif" />
+    <Content Include="PaymentVerification.aspx" />
+    <Content Include="FirstLogin.aspx" />
+    <Content Include="images\3.png" />
+    <Content Include="images\Gold.png" />
+    <Content Include="images\Trial.png" />
     <Content Include="images\mission.png" />
     <Content Include="images\vision.png" />
     <Content Include="CourseSubscription.aspx" />
@@ -265,6 +277,13 @@
     <Content Include="send.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="403.aspx.cs">
+      <DependentUpon>403.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="403.aspx.designer.cs">
+      <DependentUpon>403.aspx</DependentUpon>
+    </Compile>
     <Compile Include="aboutus.aspx.cs">
       <DependentUpon>aboutus.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -279,6 +298,13 @@
     <Compile Include="Activation.aspx.designer.cs">
       <DependentUpon>Activation.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ChangeSubscription.aspx.cs">
+      <DependentUpon>ChangeSubscription.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangeSubscription.aspx.designer.cs">
+      <DependentUpon>ChangeSubscription.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -286,12 +312,26 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="VerifyPayments.aspx.cs">
-      <DependentUpon>VerifyPayments.aspx</DependentUpon>
+    <Compile Include="AddSubscription.aspx.cs">
+      <DependentUpon>AddSubscription.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="VerifyPayments.aspx.designer.cs">
-      <DependentUpon>VerifyPayments.aspx</DependentUpon>
+    <Compile Include="AddSubscription.aspx.designer.cs">
+      <DependentUpon>AddSubscription.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentVerification.aspx.cs">
+      <DependentUpon>PaymentVerification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaymentVerification.aspx.designer.cs">
+      <DependentUpon>PaymentVerification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FirstLogin.aspx.cs">
+      <DependentUpon>FirstLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FirstLogin.aspx.designer.cs">
+      <DependentUpon>FirstLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="CourseSubscription.aspx.cs">
       <DependentUpon>CourseSubscription.aspx</DependentUpon>
@@ -450,6 +490,7 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>test.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
     <None Include="validation\bootstrap.css.bak" />
   </ItemGroup>
   <ItemGroup>

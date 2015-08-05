@@ -37,8 +37,8 @@ namespace AaruthraEduEvolvWeb
                 try
                 {
                     AaruthraEduEvolvBL.SendMail mail = new AaruthraEduEvolvBL.SendMail();
-                 //   mail.SendMailNow("info@veeraseducation.com", "From " + txtName.Text,
-                    mail.SendMailNow("rajkumarcse2006@gmail.com", "From " + txtName.Text,
+                  mail.SendMailNow("info@veeraseducation.com", "From " + txtName.Text,
+                   // mail.SendMailNow("rajkumarcse2006@gmail.com", "From " + txtName.Text,
                         "Email Address : " + txtEmail.Text + "<br/> Website :  " + txtWebsite.Text + "<br/> " +
                         txtMessage.Text, true);
                     GenerateRandomValue();

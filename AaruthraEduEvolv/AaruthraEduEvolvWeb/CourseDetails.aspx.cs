@@ -13,12 +13,26 @@ public partial class CourseDetails : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+
         var bl = new AaruthraEduEvolvBL.BusinessLr();
         Customer cs = (Customer)Session["UserData"];
         if (cs != null)
         {
             Session["UserData"] = bl.GetCustomer(cs.strUserName);
             lblUserName.Text = cs.strFirstName + " &nbsp; &nbsp;";
+
+            if (cs.strUserName.ToUpper() == "ADMIN")
+            {
+                hpVerifyPayment.Visible = true;
+                hpSubscribe.Visible = true;
+            }
+
+            else
+            {
+                hpVerifyPayment.Visible = false;
+                hpSubscribe.Visible = false;
+
+            }
 
         }
         else

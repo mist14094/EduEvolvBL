@@ -1,0 +1,604 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile>2015-06-16T15:44:05.6710355-04:00</TimeStampOfAssociatedLegacyPublishXmlFile>
+    <_PublishTargetUrl>C:\Users\vramalingam\Desktop\LatestPub\</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="403.aspx">
+      <publishTime>08/04/2015 16:17:42</publishTime>
+    </File>
+    <File Include="aboutus.aspx">
+      <publishTime>08/04/2015 09:52:27</publishTime>
+    </File>
+    <File Include="Activation.aspx">
+      <publishTime>08/04/2015 09:52:28</publishTime>
+    </File>
+    <File Include="AddSubscription.aspx">
+      <publishTime>08/04/2015 16:34:08</publishTime>
+    </File>
+    <File Include="bin/AaruthraEduEvolvBL.dll">
+      <publishTime>08/04/2015 16:34:33</publishTime>
+    </File>
+    <File Include="bin/AaruthraEduEvolvConstants.dll">
+      <publishTime>08/04/2015 16:34:31</publishTime>
+    </File>
+    <File Include="bin/AaruthraEduEvolvDL.dll">
+      <publishTime>08/04/2015 16:34:31</publishTime>
+    </File>
+    <File Include="bin/AaruthraEduEvolvWeb.dll">
+      <publishTime>08/04/2015 16:34:33</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>10/02/2013 12:10:10</publishTime>
+    </File>
+    <File Include="bin/NLog.config">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="bin/NLog.dll">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="cgi-bin/web.config">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="ChangeSubscription.aspx">
+      <publishTime>08/04/2015 16:29:28</publishTime>
+    </File>
+    <File Include="Contact.aspx">
+      <publishTime>06/10/2015 15:20:47</publishTime>
+    </File>
+    <File Include="CourseDetails.aspx">
+      <publishTime>08/04/2015 16:22:47</publishTime>
+    </File>
+    <File Include="CourseList.aspx">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="CourseSubscription.aspx">
+      <publishTime>06/15/2015 21:20:17</publishTime>
+    </File>
+    <File Include="css/animate.css">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="css/bootstrap-responsive.css">
+      <publishTime>06/10/2015 09:31:19</publishTime>
+    </File>
+    <File Include="css/bootstrap.min.css">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="css/bootstrap3.min.css">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="css/bootstrapValidator.css">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="css/css.css">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="css/flexslider.css">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="css/images/bullets/check.gif">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="css/images/dot10.html">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="css/prettyPhoto.css">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="css/responsive.css">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="css/style.css">
+      <publishTime>08/01/2015 11:13:04</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="FirstLogin.aspx">
+      <publishTime>08/04/2015 09:32:57</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/3.png">
+      <publishTime>07/29/2015 13:41:10</publishTime>
+    </File>
+    <File Include="images/403.gif">
+      <publishTime>08/04/2015 16:12:47</publishTime>
+    </File>
+    <File Include="images/arrow-downs.html">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/arrow_close.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/arrow_open.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/bg.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/bullets/lists.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/bullets/list_black.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/bullets/list_blue.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/bullets/list_cyan.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/bullets/list_gray.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/bullets/list_green.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/bullets/list_magenta.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/bullets/list_navy.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/bullets/list_orange.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/bullets/list_pink.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/bullets/list_red.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/bullets/list_yellow.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/demo/coreden_1.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/demo/galleria_img1.jpg">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/demo/galleria_img2.jpg">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/demo/galleria_img3.jpg">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/demo/galleria_img4.jpg">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/demo/galleria_img5.jpg">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/demo/galleria_img6.jpg">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/demo/hostme_1.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/demo/slide1.png">
+      <publishTime>07/25/2015 09:19:37</publishTime>
+    </File>
+    <File Include="images/demo/slide2.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/demo/slide3.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/demo/slide4.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/demo/team1.jpg">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/demo/team2.jpg">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/demo/team3.jpg">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/demo/team4.jpg">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/demo/victoria_2.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/dots.html">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/dropcap3.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/e65d800813212bc635a5983181adb9c2.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/flex-arrow-next.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/flex-arrow-prev.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/flex-arrows.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/Gold.png">
+      <publishTime>07/29/2015 13:39:25</publishTime>
+    </File>
+    <File Include="images/gravatar.gif">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/hover_icons.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/icon1.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/icon2.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/icon3.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/icon4.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/icons/About ME.txt">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/icons/icons_black.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/icons/icons_blue.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/icons/icons_cyan.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/icons/icons_gray.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/icons/icons_green.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/icons/icons_magenta.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/icons/icons_orange.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/icons/icons_pink.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/icons/icons_red.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/icons/icons_yellow.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/imac.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/lg.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/logo.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/map.jpg">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/mission.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/opacs/dark10.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/opacs/dark5.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/opacs/dark60.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/opacs/white20.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/opacs/white90.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/post_slider_navs.html">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/dark_rounded/btnNext.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/dark_rounded/btnPrevious.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/dark_rounded/contentPattern.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/dark_rounded/loader.gif">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/dark_rounded/sprite.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/dark_square/btnNext.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/dark_square/btnPrevious.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/dark_square/loader.gif">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/dark_square/sprite.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/default/default_thumb.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/default/loader.gif">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/default/sprite.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/default/sprite_next.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/default/sprite_prev.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/default/sprite_x.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/default/sprite_y.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/facebook/btnNext.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/facebook/btnPrevious.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/facebook/contentPatternBottom.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/facebook/contentPatternLeft.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/facebook/contentPatternRight.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/facebook/contentPatternTop.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/facebook/default_thumbnail.gif">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/facebook/loader.gif">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/facebook/sprite.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/light_rounded/btnNext.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/light_rounded/btnPrevious.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/light_rounded/loader.gif">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/light_rounded/sprite.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/light_square/btnNext.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/light_square/btnPrevious.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/prettyPhoto/light_square/sprite.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/preview.jpg">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/quote_left.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/ribbons/02.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/separator.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/service_icon1.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/service_icon2.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/sociables/dribbble.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/sociables/facebook.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/sociables/googleplus.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/sociables/in.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/sociables/twitter.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="images/Trial.png">
+      <publishTime>07/29/2015 13:37:24</publishTime>
+    </File>
+    <File Include="images/vision.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="img/background.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="img/vlogo.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="js/bootstrap.js">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="js/bootstrap.min.js">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="js/bootstrap3.min.js">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="js/bootstrapValidator.js">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="js/hoverIntent.js">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="js/jquery-1.7.1.min.js">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="js/jquery-1.7.1.min_853c4af3.js">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="js/jquery-1.7.1.min_bf70e42d.js">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="js/jquery.easing.1.3.js">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="js/jquery.flexslider-min.js">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="js/jquery.gmap.min.js">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="js/jquery.min.js">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="js/jquery.mobilemenu.js">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="js/jquery.prettyPhoto.js">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="js/jquery.tools.min.js">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="js/jquery.ui.map.js">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="js/src/galleria.js">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="js/src/themes/classic/ajax-loader.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="js/src/themes/classic/classic-map.png">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="js/src/themes/classic/galleria.classic.css">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="js/src/themes/classic/galleria.classic.js">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="js/superfish.js">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="js/sys_custom.js">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="js/uri.js">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="js/validator.js">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="MasterPage.Master">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="PasswordReset.aspx">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="PaymentVerification.aspx">
+      <publishTime>08/04/2015 16:29:37</publishTime>
+    </File>
+    <File Include="Products.aspx">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="Receive.aspx">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="RecoverPassword.aspx">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="register.aspx">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="send.aspx">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="services.aspx">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="signin.aspx">
+      <publishTime>06/10/2015 15:17:21</publishTime>
+    </File>
+    <File Include="Site1.Master">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="Subscription.aspx">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="Templates/Registration.html">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="Test.aspx">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="validation/bootstrap.css">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="validation/bootstrap.min.js">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="validation/bootstrapValidator.css">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="validation/bootstrapValidator.js">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="validation/jquery.cookie.js">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="validation/jquery.min.js">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="VerifyPayments.aspx">
+      <publishTime>06/15/2015 23:10:59</publishTime>
+    </File>
+    <File Include="Video.aspx">
+      <publishTime>06/08/2015 17:04:36</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/29/2015 13:50:43</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

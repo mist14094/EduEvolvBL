@@ -19,6 +19,17 @@ public partial class signin : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         var bl = new AaruthraEduEvolvBL.BusinessLr();
+
+        Customer cs = (Customer)Session["UserData"];
+        if (cs != null)
+        {
+
+            Response.Redirect("CourseDetails.aspx");
+        }
+        else
+        {
+          
+        }
         //var material = bl.GetMaterials();
         //var courses = bl.GetCourses();
         //var csC = bl.GetCoursesWithMaterials();

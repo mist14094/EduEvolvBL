@@ -30,6 +30,24 @@ public partial class CourseDetails {
     protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
     
     /// <summary>
+    /// hpVerifyPayment control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.HyperLink hpVerifyPayment;
+    
+    /// <summary>
+    /// hpSubscribe control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.HyperLink hpSubscribe;
+    
+    /// <summary>
     /// lblUserName control.
     /// </summary>
     /// <remarks>

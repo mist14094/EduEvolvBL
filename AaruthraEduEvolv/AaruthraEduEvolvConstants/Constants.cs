@@ -72,5 +72,14 @@ namespace AaruthraEduEvolvConstants
            "  UPDATE TransactionMaster SET IsCompleteTransaction=1 WHERE TransactionID='{0}'";
 
         public string sp_MakeSubscriptions = "sp_MakeSubscriptions";
+
+        public string GetAllSubscription = "SELECT *  FROM [course].[Subscription] WHERE UserID={0}";
+
+        public string ManualActivation = "sp_ManualActivation";
+
+        public string GetSubscriptionDetails = "sp_GetSubscriptionDetails";
+
+        public string UpdateSubscription = "sp_UpdateSubscription"; 
+        public string DeleteSubscription = "sp_DeleteSubscription";
     }
 }

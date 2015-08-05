@@ -81,6 +81,7 @@ public partial class register : System.Web.UI.Page
                     default:
                          message = "Registration successful. Activation Mail has been sent!";
                         sendActivationMail(userId);
+                        Response.Redirect("FirstLogin.aspx");
                         break;
                 }
                 //return message;
@@ -88,6 +89,7 @@ public partial class register : System.Web.UI.Page
                 alert.Style.Add("display", "true");
                 ClearValues();
                 //ClientScript.RegisterStartupScript(GetType(), "alert", "alert('" + message + "');", true);
+            Response.Redirect("");
             
         }
         catch (SqlException ex)
