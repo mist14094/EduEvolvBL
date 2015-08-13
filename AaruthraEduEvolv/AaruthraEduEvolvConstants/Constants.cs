@@ -81,5 +81,9 @@ namespace AaruthraEduEvolvConstants
 
         public string UpdateSubscription = "sp_UpdateSubscription"; 
         public string DeleteSubscription = "sp_DeleteSubscription";
+        public string GetTestMasterDetail = "SELECT *   FROM [veeraEDU].[rasucas].[TestMaster] WHERE MaterialID={0}";
+
+        public string GetQuestionSetForMaster =
+            "SELECT *  FROM [veeraEDU].[rasucas].[TestQuestions] WHERE MasterTestID={0}";
     }
 }

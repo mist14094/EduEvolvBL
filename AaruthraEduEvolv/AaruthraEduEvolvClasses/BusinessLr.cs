@@ -17,6 +17,8 @@ namespace AaruthraEduEvolvBL
         private AaruthraEduEvolvConstants.Customer _customer;
         private AaruthraEduEvolvConstants.Video.Course _course;
         private AaruthraEduEvolvConstants.Video.Material _material;
+        private AaruthraEduEvolvConstants.Test _test;
+        private AaruthraEduEvolvConstants.QuestionandAnswers _questionandAnswers;
 
         public BusinessLr()
         {
@@ -27,6 +29,8 @@ namespace AaruthraEduEvolvBL
             _customer = new Customer();
             _course = new Video.Course();
             _material = new Video.Material();
+            _test = new Test();
+            _questionandAnswers = new QuestionandAnswers();
             _nlog.Trace(message:
               this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
               System.Reflection.MethodBase.GetCurrentMethod().Name + "::Exit");
@@ -284,6 +288,33 @@ namespace AaruthraEduEvolvBL
      System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
             return _access.DeleteSubscription(ExpirationDate, SubscriptionID, UserID, CourseID);
         }
+
+
+        public List<QuestionandAnswers> GetQuestionandAnswers(int intMasterTestID)
+        {
+            _nlog.Trace(message:
+     this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+     System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            return _questionandAnswers.GetQuestionAnswers(_access.GetQuestionSetForMaster(intMasterTestID));
+        }
+
+        public Test GetMasterQuestionSet(int masterQuestion)
+        {
+            _nlog.Trace(message:
+   this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+   System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            var TestMaster = _access.GetTestMasterDetail(masterQuestion);
+            if (TestMaster.Rows.Count > 0)
+            {
+                return _test.GetMasterQuestionSet(TestMaster,
+                    GetQuestionandAnswers(Convert.ToInt16(TestMaster.Rows[0]["Sno"].ToString())));
+            }
+            else
+            {
+                return null;
+            }
+        }
+
     }
 
 }

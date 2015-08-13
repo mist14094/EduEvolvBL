@@ -22,7 +22,7 @@ namespace AaruthraEduEvolvConstants
         public string StatusID { get; set; }
         public List<Video.Course> Courses { get; set; }
 
-        public List<Customer> toCustomer(DataTable customerDataTable )
+        public List<Customer> toCustomer(DataTable customerDataTable)
         {
             List<Customer> lsCustomers = new List<Customer>();
             foreach (DataRow row in customerDataTable.Rows)

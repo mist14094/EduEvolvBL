@@ -97,6 +97,7 @@
     <Content Include="Receive.aspx" />
     <Content Include="RecoverPassword.aspx" />
     <Content Include="register.aspx" />
+    <Content Include="Sound\4045.mp3" />
     <Content Include="Subscription.aspx" />
     <Content Include="Templates\Registration.html" />
     <Content Include="Test.aspx" />
@@ -385,17 +386,17 @@
     <Compile Include="Subscription.aspx.designer.cs">
       <DependentUpon>Subscription.aspx</DependentUpon>
     </Compile>
+    <Compile Include="test.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>test.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Test.aspx.cs">
       <DependentUpon>Test.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Test.aspx.designer.cs">
       <DependentUpon>Test.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="test.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>test.edmx</DependentUpon>
     </Compile>
     <Compile Include="Video.aspx.cs">
       <DependentUpon>Video.aspx</DependentUpon>
