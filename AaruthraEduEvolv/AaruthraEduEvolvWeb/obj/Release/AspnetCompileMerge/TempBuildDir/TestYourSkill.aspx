@@ -4,19 +4,13 @@
 <html>
   <head id="Head1" runat="server">
     <title>Veera's Education - Test</title>
-	
-	
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-	
 	<link href="css/bootstrap3.min.css" rel="stylesheet">
 	<link href="css/animate.css" rel="stylesheet">
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap3.min.js"></script>   
     <script src="js/uri.js"></script>
-	
 	<style>
 
 hr { 
@@ -146,6 +140,30 @@ hr {
 	    }
 		
 	</script>
+      
+      <style type="text/css">
+
+/* 
+
+ -------------------------------------------------------------
+
+ In-page demo CSS - see external CSS for actual relevant stuff.
+
+ --------------------------------------------------------------
+
+ */
+
+
+</style>
+<link rel="stylesheet" type="text/css" href="css/mp3-player-button.css" />
+<script type="text/javascript" src="../../script/soundmanager2.js"></script>
+<script type="text/javascript" src="script/mp3-player-button.js"></script>
+<script>
+    soundManager.setup({
+        // required: path to directory containing SM2 SWF files
+        url: '../../swf/'
+    });
+</script>
 	
   </head>
   <body id="Body1" runat="server">
@@ -208,7 +226,7 @@ hr {
 				<asp:ListView ID="ListView1" runat="server" >
 				    
                     <LayoutTemplate>
-    <table runat="server" id="table1" style="width: 100%" >
+    <table runat="server" id="table1" style="width: 100%; font-size: 13pt;" >
       <tr runat="server" id="itemPlaceholder" ></tr>
     </table>
   </LayoutTemplate>
@@ -216,19 +234,25 @@ hr {
     <tr runat="server">
       <td runat="server">
         <%-- Data-bound content. --%>
-   <h2><b>   <asp:Label ID="lblQuestionNumber" runat="server" Text='<%# Container.DataItemIndex + 1 %>' />) 
-        <asp:Label ID="lblstrQuestion" runat="server" Text='<%#string.Concat(" " ,Eval("strQuestion")) %>' />
-       </b>  </h2> <asp:Label ID="lblstrQuestionDescription" runat="server" Text='<%# string.Concat(" <br/>" ,Eval("strQuestionDescription")) %>' />
-       <br/>   <asp:Label ID="lblstrAnswerHint" runat="server" ForeColor="Blue" Text='<%# string.Concat("Choose the Answer from : ",Eval("strAnswerHint")) %>' />
+<b>   <asp:Label ID="lblQuestionNumber" runat="server" Text='<%# Container.DataItemIndex + 1 %>' />) 
+       
+        <asp:Label ID="lblstrQuestion" runat="server" Text='<%#string.Concat(" " ,Eval("strQuestion")) %>' /> <a href='<%#Eval("strQuestionAL").ToString().Substring(22,Eval("strQuestionAL").ToString().IndexOf(".mp3", System.StringComparison.Ordinal)+4-22) %>' class="sm2_button">Question</a>
+       </b>  
+       <%-- <asp:Label ID="lblstrQuestionDescription" runat="server" Text='<%# string.Concat(" <br/>" ,Eval("strQuestionDescription")) %>' />--%>
+       <br/> <asp:Label ID="lblstrAnswerHint" runat="server" ForeColor="Blue" Text='<%# string.Concat("Choose the Answer from : ",Eval("strAnswerHint")) %>' />
+           <a runat="server" Visible="True" id="strAnswerHintAudio" href='<%#Eval("strAnswerDesc").ToString().Substring(22,Eval("strAnswerDesc").ToString().IndexOf(".mp3", System.StringComparison.Ordinal)+4-22) %>' class="sm2_button">Question</a>
+         
        <%--    <asp:Label ID="lblstrQuestionHint" runat="server" Text='<%# string.Concat("  <br/> [ Question Hint :  ", Eval("strQuestionHint") ," ]")%>' />  --%>
-         <br/><br/><asp:TextBox runat="server" ID="txtAnswer" Width="100%" ></asp:TextBox>
-          <asp:Label ID="lblstrQuestionAL" runat="server" Text='<%#Eval("strQuestionAL")%>' />
+         <br/><asp:TextBox runat="server" ID="txtAnswer" Width="100%" ></asp:TextBox>
+          <%--      <asp:Label ID="lblstrQuestionAL" runat="server" Text='<%#Eval("strQuestionAL")%>' /> --%>
         
-          <asp:Label ID="lblstrAnswerDesc" runat="server" Text='<%#string.Concat( "<br/><br/> Answer : ",Eval("strAnswerDesc") )%>' Visible="False"/>
-       <b>  <asp:Label ID="lblstrPositiveAnswerResponse" runat="server" Text='<%#string.Concat( "<br/><br/> Answer : ",Eval("strPositiveAnswerResponse") )%>' Visible="False"/></b> 
-       <b>   <asp:Label ID="lblstrNegetiveAnswerResponse" runat="server" Text='<%#string.Concat( "<br/><br/> Answer : ",Eval("strNegetiveAnswerResponse") )%>' Visible="False"/></b> 
-          <h4><asp:Label ID="lblCorrectAnswertxt" runat="server" ForeColor="SaddleBrown" Font-Bold="True" Text='<%#string.Concat( "<br/><br/> Answer : ",Eval("strAnswerChoice") )%>' Visible="False"/></h4>
-          <asp:Label ID="lblCorrectAnswer" runat="server"  Text='<%#string.Concat(Eval("strAnswerAudio") )%>' Visible="False"/>
+          <asp:Label ID="lblstrAnswerDesc" runat="server" Text='<%#string.Concat( "<br/> Answer : ",Eval("strAnswerChoice") )%>' Visible="False"/>
+        <asp:Label ID="lblstrPositiveAnswerResponse" runat="server" Text='<%#string.Concat( "<br/>",Eval("strPositiveAnswerResponse") )%>' Visible="False"/>
+          <asp:Label ID="lblstrNegetiveAnswerResponse" runat="server" Text='<%#string.Concat( "<br/>",Eval("strNegetiveAnswerResponse") )%>' Visible="False"/>
+          <asp:Label ID="lblCorrectAnswertxt" runat="server" ForeColor="SaddleBrown" Font-Bold="True" Text='<%#string.Concat( "<br/> Answer : ",Eval("strAnswerChoice") )%>' Visible="False"/>
+          <a runat="server" Visible="False" id="lblCorrectAnswer" href='<%#Eval("strAnswerAudio").ToString().Substring(22,Eval("strAnswerAudio").ToString().IndexOf(".mp3", System.StringComparison.Ordinal)+4-22) %>' class="sm2_button">Question</a>
+          
+           <%--      <asp:Label ID="lblCorrectAnswer" runat="server"  Text='<%#string.Concat(Eval("strAnswerAudio") )%>' Visible="False"/> --%>
            <asp:Label ID="lblCheckAnswer" runat="server" Text='<%#string.Concat(Eval("strAnswerChoice") )%>' Visible="False"/>
            <hr/>
           <br/><br />

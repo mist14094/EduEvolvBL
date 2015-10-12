@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using AaruthraEduEvolvConstants;
 
@@ -83,9 +84,10 @@ public partial class TestYourSkill : System.Web.UI.Page
             Label lblstrPositiveAnswerResponse = item.FindControl("lblstrPositiveAnswerResponse") as Label;
             Label lblstrNegetiveAnswerResponse = item.FindControl("lblstrNegetiveAnswerResponse") as Label;
             Label lblCorrectAnswertxt = item.FindControl("lblCorrectAnswertxt") as Label;
-            Label lblCorrectAnswer = item.FindControl("lblCorrectAnswer") as Label;
+          //  Label lblCorrectAnswer = item.FindControl("lblCorrectAnswer") as Label;
             Label lblCheckAnswer = item.FindControl("lblCheckAnswer") as Label;
             TextBox txtAnswer = item.FindControl("txtAnswer") as TextBox;
+            HtmlControl lblCorrectAnswer = item.FindControl("lblCorrectAnswer") as HtmlControl;
             lblstrPositiveAnswerResponse.Visible = false;
             lblstrPositiveAnswerResponse.ForeColor=Color.Green;
             lblstrNegetiveAnswerResponse.Visible = false;

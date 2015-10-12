@@ -71,6 +71,13 @@
     <Content Include="403.aspx" />
     <Content Include="aboutus.aspx" />
     <Content Include="Activation.aspx" />
+    <Content Include="css\mp3-player-button.css" />
+    <Content Include="image\arrow-right-black-2x.png" />
+    <Content Include="image\arrow-right-black.gif" />
+    <Content Include="image\arrow-right-black.png" />
+    <Content Include="image\arrow-right-white-2x.png" />
+    <Content Include="image\arrow-right-white.gif" />
+    <Content Include="image\arrow-right-white.png" />
     <Content Include="NewSubscription.aspx" />
     <Content Include="ChangeSubscription.aspx" />
     <Content Include="bin\AaruthraEduEvolvBL.dll" />
@@ -98,10 +105,20 @@
     <Content Include="Receive.aspx" />
     <Content Include="RecoverPassword.aspx" />
     <Content Include="register.aspx" />
+    <Content Include="script\mp3-player-button.js" />
+    <Content Include="script\soundmanager2-jsmin.js" />
+    <Content Include="script\soundmanager2-nodebug-jsmin.js" />
+    <Content Include="script\soundmanager2-nodebug.js" />
+    <Content Include="script\soundmanager2.js" />
     <Content Include="Sound\4045.mp3" />
     <Content Include="Subscription.aspx" />
+    <Content Include="swf\soundmanager2.swf" />
+    <Content Include="swf\soundmanager2_debug.swf" />
+    <Content Include="swf\soundmanager2_flash9.swf" />
+    <Content Include="swf\soundmanager2_flash9_debug.swf" />
     <Content Include="Templates\Registration.html" />
     <Content Include="TestYourSkill.aspx" />
+    <Content Include="TestYourSkillT1.aspx" />
     <Content Include="Test.aspx" />
     <Content Include="Video.aspx" />
     <Content Include="CourseList.aspx" />
@@ -402,6 +419,13 @@
     <Compile Include="TestYourSkill.aspx.designer.cs">
       <DependentUpon>TestYourSkill.aspx</DependentUpon>
     </Compile>
+    <Compile Include="TestYourSkillT1.aspx.cs">
+      <DependentUpon>TestYourSkillT1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestYourSkillT1.aspx.designer.cs">
+      <DependentUpon>TestYourSkillT1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="test.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -508,6 +532,14 @@
       <LastGenOutput>test.Designer.cs</LastGenOutput>
     </EntityDeploy>
     <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+    <Content Include="swf\soundmanager2_flash_xdomain.zip" />
+    <Content Include="src\make-flash8.bat" />
+    <Content Include="src\make-flash8.sh" />
+    <Content Include="src\make-flash9.bat" />
+    <Content Include="src\make-flash9.sh" />
+    <Content Include="src\SoundManager2.as" />
+    <Content Include="src\SoundManager2_AS3.as" />
+    <Content Include="src\SoundManager2_SMSound_AS3.as" />
     <None Include="validation\bootstrap.css.bak" />
   </ItemGroup>
   <ItemGroup>
