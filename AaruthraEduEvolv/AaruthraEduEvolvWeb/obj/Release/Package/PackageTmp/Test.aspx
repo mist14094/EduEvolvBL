@@ -216,18 +216,19 @@ hr {
     <tr runat="server">
       <td runat="server">
         <%-- Data-bound content. --%>
-        <asp:Label ID="lblQuestionNumber" runat="server" Text='<%# Container.DataItemIndex + 1 %>' />) 
+    <b>   <asp:Label ID="lblQuestionNumber" runat="server" Text='<%# Container.DataItemIndex + 1 %>' />) 
         <asp:Label ID="lblstrQuestion" runat="server" Text='<%#string.Concat(" " ,Eval("strQuestion")) %>' />
-        <asp:Label ID="lblstrQuestionDescription" runat="server" Text='<%# string.Concat(" <br/>" ,Eval("strQuestionDescription")) %>' />
-         <asp:Label ID="lblstrQuestionHint" runat="server" Text='<%# string.Concat("  <br/> [ Question Hint :  ", Eval("strQuestionHint") ," ]")%>' /> 
+       </b>  <asp:Label ID="lblstrQuestionDescription" runat="server" Text='<%# string.Concat(" <br/>" ,Eval("strQuestionDescription")) %>' />
+       <%--    <asp:Label ID="lblstrQuestionHint" runat="server" Text='<%# string.Concat("  <br/> [ Question Hint :  ", Eval("strQuestionHint") ," ]")%>' />  --%>
          <br/><br/><asp:TextBox runat="server" ID="txtAnswer" Width="100%" ></asp:TextBox>
           <asp:Label ID="lblstrQuestionAL" runat="server" Text='<%#Eval("strQuestionAL")%>' />
           <br/><br/>  <asp:Label ID="lblstrAnswerHint" runat="server" Text='<%# string.Concat("Choose the Answer from : ",Eval("strAnswerHint")) %>' />
           <asp:Label ID="lblstrAnswerDesc" runat="server" Text='<%#string.Concat( "<br/><br/> Answer : ",Eval("strAnswerDesc") )%>' Visible="False"/>
-          <asp:Label ID="lblstrPositiveAnswerResponse" runat="server" Text='<%#string.Concat( "<br/><br/> Answer : ",Eval("strPositiveAnswerResponse") )%>' Visible="False"/>
-          <asp:Label ID="lblstrNegetiveAnswerResponse" runat="server" Text='<%#string.Concat( "<br/><br/> Answer : ",Eval("strNegetiveAnswerResponse") )%>' Visible="False"/>
+       <b>  <asp:Label ID="lblstrPositiveAnswerResponse" runat="server" Text='<%#string.Concat( "<br/><br/> Answer : ",Eval("strPositiveAnswerResponse") )%>' Visible="False"/></b> 
+       <b>   <asp:Label ID="lblstrNegetiveAnswerResponse" runat="server" Text='<%#string.Concat( "<br/><br/> Answer : ",Eval("strNegetiveAnswerResponse") )%>' Visible="False"/></b> 
           <asp:Label ID="lblCorrectAnswertxt" runat="server" Text='<%#string.Concat( "<br/><br/> Answer : ",Eval("strAnswerChoice") )%>' Visible="False"/>
-          <asp:Label ID="lblCorrectAnswer" runat="server" Text='<%#string.Concat(Eval("strAnswerChoice") )%>' Visible="False"/>
+          <asp:Label ID="lblCorrectAnswer" runat="server" Text='<%#string.Concat(Eval("strAnswerAudio") )%>' Visible="False"/>
+           <asp:Label ID="lblCheckAnswer" runat="server" Text='<%#string.Concat(Eval("strAnswerChoice") )%>' Visible="False"/>
            <hr/>
           <br/><br />
       </td>

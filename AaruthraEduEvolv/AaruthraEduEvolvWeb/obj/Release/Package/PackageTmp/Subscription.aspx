@@ -151,12 +151,12 @@
             Welcome <asp:Label runat="server" ID="lblUserName"></asp:Label>
                     <a href="CourseDetails.aspx" role="button" class="btn btn-info navbar-btn" >Home</a> 
                     <asp:Button runat="server" ID="btnLogOff" role="button" 
-                        class="btn btn-info navbar-btn" Text="Log off" onclick="btnLogOff_Click" />
+                        class="btn btn-info navbar-btn" Text="Log off" />
                     
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
-        
+<b>There is no act
         <!-- /.container-fluid -->
     </nav>
     <div class="container">
@@ -195,7 +195,7 @@
                         </td>
                     </ItemTemplate>
                     <EmptyDataTemplate>
-                      <center> <b>There is no active course set for you, You can buy more course.<br/> <asp:Button runat="server" ID="btnBuyPlan" Text="Buy More" OnClick="btnBuyPlan_onClickEvent" /></b> </center>
+                      <center> <b>There is no active course set for you, You can buy more course.<br/> <asp:Button runat="server" ID="btnBuyPlan" Text="Buy More" /></b> </center>
                     </EmptyDataTemplate>
                 </asp:ListView>
                 <br />
@@ -204,4 +204,5 @@
             </div>
         </div>
         </div>
+     </b>
 </asp:Content>

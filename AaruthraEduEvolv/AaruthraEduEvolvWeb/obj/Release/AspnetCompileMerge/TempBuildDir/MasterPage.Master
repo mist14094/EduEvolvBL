@@ -1,0 +1,186 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="AaruthraEduEvolvWeb.MasterPage" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head id="Head1" runat="server">
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	   <title>Veera's Education </title>
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/flexslider.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/prettyPhoto.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/responsive.css" />
+    <script type="text/javascript" src="js/jquery.mobilemenu.js"></script>
+
+    <!-- Javascripts -->
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/hoverIntent.js"></script>
+	<script type="text/javascript" src="js/superfish.js"></script>
+	<script type="text/javascript" src="js/jquery.tools.min.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="js/sys_custom.js"></script>
+	<!-- / Javascripts -->		
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/responsive.css" />
+	<script type="text/javascript" src="js/jquery.mobilemenu.js"></script>
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+	<!-- / CSS & Script for for Responsive Layouts -->
+
+	<!--[if lt IE 9]>
+	<script src="js/html5.js"></script>
+	<![endif]-->
+    
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+  m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-63843961-1', 'auto');
+        ga('send', 'pageview');
+
+</script>
+    
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="defaultForm" runat="server" action=""  method="post" class="form-horizontal">
+   
+	<div id="boxed" class="fullwidth">
+		<div id="wrapper">
+
+			<header id="header">
+
+				<div class="topbar">
+					<div class="inner">
+
+						
+						<!-- /- .nav -->
+
+						<ul class="atpsocials">
+							<li><a class="facebook" href="#"><img src="images/sociables/facebook.png" /></a></li>
+							<li><a class="twitter" href="#"><img src="images/sociables/twitter.png" /></a></li>
+							<li><a class="dribbble" href="#"><img src="images/sociables/dribbble.png" /></a></li>
+							<li><a class="pinterest" href="#"><img src="images/sociables/in.png" /></a></li>
+							<li><a class="googleplus" href="#"><img src="images/sociables/googleplus.png" /></a></li>
+						</ul>
+						<!-- /- .atpsocials -->
+
+					</div>
+					<!-- /- .inner -->
+				</div>
+				<!-- /- .topbar -->
+
+				<div id="head">
+					<div class="logo">
+						<a href="Default.aspx"><img src="images/logo.png"></a>
+					</div>
+					<!-- /- .logo -->
+
+					<nav>
+						<div class="menu">
+							<ul class="sf-menu">
+								<li><a href="default.aspx">Home<span>Overview</span></a>
+									
+								</li>
+								<li><a href="aboutus.aspx">About us<span>Who we are</span></a></li>
+								<li><a href="services.aspx">Services<span>What we do</span></a></li>
+								<li><a href="products.aspx">Products<span>What we offer</span></a>
+									
+								</li>
+								
+								
+								<li><a href="contact.aspx">Contact<span>Get in Touch!</span></a></li>
+                                <li><a href="signin.aspx">Login<span>Subscriber Login</span></a>
+									<%--<ul>
+										<li><a href="#">Columns</a></li>
+										<li><a href="#">Typography</a></li>
+										<li><a href="#">Icons</a></li>
+										<li><a href="#">Tabs &amp; Toggles</a></li>
+										<li><a href="#">Pricing Boxes</a></li>
+									</ul>	--%>				
+								</li>
+							</ul>
+						</div>
+						<!-- /- .menu -->
+					</nav>
+
+				</div>
+				<!-- /- #head -->	
+			</header>
+			<!-- /- <header> -->			
+         <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <footer id="footer">
+				<div class="inner">
+				
+					<div class="one_fourth">
+						<div class="widget_postslist">
+							
+						    
+							<img src="images/lg.png" />
+						</div>
+					</div>
+					<!-- /- .one_fourth -->
+					
+					<div class="one_fourth">
+						<div class="syswidget">
+				<h3>General Inquiries</h3>
+							<p>For all general inquiries about the company, please use the contact form.</p>
+					
+						</div>
+					</div>
+					<!-- /- .one_fourth -->
+					
+					<div class="one_fourth">
+						<div class="syswidget">
+									<h3>Postal Address</h3>
+							<p>Veera's Education,<br>
+							2nd floor, Velichem Super Market Upstairs, Near Fly Over,<br>
+							Engineering College Road, <br>
+                            Annamalai Nagar, <br>Chidambaram - 608 002<br>
+										
+							
+						</div>
+					</div>
+					<!-- /- .one_fourth -->
+					
+					<div class="one_fourth last">
+						<div class="syswidget">
+							<h3 class="widget-title">Get in Touch</h3>
+							<p><br/>
+							 +91 98941 69003 <br /> +91 97916 08122<br>
+							<email>info@veeraseducation.com</email></p>						
+						</div>
+					</div>
+					<!-- /- .one_fourth last -->
+
+				</div>
+				<!-- /- .inner(footer) -->
+			</footer>
+            <!-- /- <footer> -->
+            <div class="copyright">
+                <div class="inner">
+                    <p>
+                        © 2015 All Rights Reserved - Veera's Education - <a href="http://aaruthra.com/">Powered
+                            By AARUTHRA TECHNOLOGIES</a> - <a href="#">Terms & Conditions</a> - <a href="#">Privacy
+                                Policy</a></p>
+                </div>
+                <!-- /- .inner(copyright) -->
+            </div>
+            <!-- /- .copyright -->
+        </div>
+        <!-- /- #wrapper -->
+    </div>
+    </form>
+</body>
+</html>

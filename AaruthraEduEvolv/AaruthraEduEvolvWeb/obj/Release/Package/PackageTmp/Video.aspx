@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="Video" CodeBehind="Video.aspx.cs" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="Video" CodeBehind="Video.aspx.cs" EnableEventValidation="false" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
@@ -201,7 +201,7 @@
 			  
       
   	  			  <div class="code" id="vimeoembedCode"></div>
-				  				       
+				 <center>	<asp:Button ID="Button1" runat="server" Text="Take your test" OnClick="Button1_Click" />	</center> 		       
 				</div>
               </div>
 			  

@@ -71,6 +71,8 @@ public partial class AddSubscription : System.Web.UI.Page
     {
         gvSubscription.DataSource = bl.GetAllSubscription(ddlUserList.SelectedValue);
         gvSubscription.DataBind();
+
+       
     }
 
     protected void btnActivate_OnClick(object sender, EventArgs e)
@@ -90,5 +92,7 @@ public partial class AddSubscription : System.Web.UI.Page
             lblError.Text = "Select a Date!";
         }
     }
+
+
 }
 

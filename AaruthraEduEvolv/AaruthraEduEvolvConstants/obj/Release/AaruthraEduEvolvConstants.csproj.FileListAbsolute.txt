@@ -12,3 +12,4 @@ G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvConstants\bin\Re
 G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvConstants\bin\Release\NLog.xml
 G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvConstants\obj\Release\AaruthraEduEvolvConstants.dll
 G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvConstants\obj\Release\AaruthraEduEvolvConstants.pdb
+G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvConstants\obj\Release\AaruthraEduEvolvConstants.csprojResolveAssemblyReference.cache

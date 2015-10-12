@@ -52,4 +52,12 @@ public partial class Video : System.Web.UI.Page
         Session["UserData"] = null;
         Response.Redirect("signin.aspx");
     }
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        int MaterialID = 0;
+        int.TryParse(Request.QueryString["MaterialID"] ?? "0", out MaterialID);
+
+        Response.Redirect("TestYourSkill.aspx?MaterialID=" + MaterialID);
+    }
 }

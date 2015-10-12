@@ -25,7 +25,7 @@ public partial class Test : System.Web.UI.Page
         Customer cs = (Customer) Session["UserData"];
         int MaterialID = 0;
         bool check = int.TryParse(Request.QueryString["MaterialID"] ?? "0", out MaterialID);
-        MaterialID = 1;
+        MaterialID = 2;
         if (cs != null)
         {
             Session["UserData"] = bl.GetCustomer(cs.strUserName);
@@ -74,17 +74,18 @@ public partial class Test : System.Web.UI.Page
             Label lblstrNegetiveAnswerResponse = item.FindControl("lblstrNegetiveAnswerResponse") as Label;
             Label lblCorrectAnswertxt = item.FindControl("lblCorrectAnswertxt") as Label;
             Label lblCorrectAnswer = item.FindControl("lblCorrectAnswer") as Label;
+            Label lblCheckAnswer = item.FindControl("lblCheckAnswer") as Label;
             TextBox txtAnswer = item.FindControl("txtAnswer") as TextBox;
             lblstrPositiveAnswerResponse.Visible = false;
             lblstrPositiveAnswerResponse.ForeColor=Color.Green;
             lblstrNegetiveAnswerResponse.Visible = false;
             lblstrNegetiveAnswerResponse.ForeColor = Color.DarkRed;
-            lblCorrectAnswertxt.Visible = false;
-            lblCorrectAnswer.Visible = false;
+            lblCorrectAnswertxt.Visible = true;
+            lblCorrectAnswer.Visible = true;
 
 
 
-            if (lblCorrectAnswer.Text.ToUpper().Contains(txtAnswer.Text.ToUpper())&& txtAnswer.Text!="")
+            if (lblCheckAnswer.Text.ToUpper().Trim().Contains(txtAnswer.Text.ToUpper().Trim()) && txtAnswer.Text != "")
             {
                 lblstrPositiveAnswerResponse.Visible = true;
             }

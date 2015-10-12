@@ -71,6 +71,7 @@
     <Content Include="403.aspx" />
     <Content Include="aboutus.aspx" />
     <Content Include="Activation.aspx" />
+    <Content Include="NewSubscription.aspx" />
     <Content Include="ChangeSubscription.aspx" />
     <Content Include="bin\AaruthraEduEvolvBL.dll" />
     <Content Include="bin\AaruthraEduEvolvBL.pdb" />
@@ -100,6 +101,7 @@
     <Content Include="Sound\4045.mp3" />
     <Content Include="Subscription.aspx" />
     <Content Include="Templates\Registration.html" />
+    <Content Include="TestYourSkill.aspx" />
     <Content Include="Test.aspx" />
     <Content Include="Video.aspx" />
     <Content Include="CourseList.aspx" />
@@ -299,6 +301,13 @@
     <Compile Include="Activation.aspx.designer.cs">
       <DependentUpon>Activation.aspx</DependentUpon>
     </Compile>
+    <Compile Include="NewSubscription.aspx.cs">
+      <DependentUpon>NewSubscription.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewSubscription.aspx.designer.cs">
+      <DependentUpon>NewSubscription.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ChangeSubscription.aspx.cs">
       <DependentUpon>ChangeSubscription.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -385,6 +394,13 @@
     </Compile>
     <Compile Include="Subscription.aspx.designer.cs">
       <DependentUpon>Subscription.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestYourSkill.aspx.cs">
+      <DependentUpon>TestYourSkill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestYourSkill.aspx.designer.cs">
+      <DependentUpon>TestYourSkill.aspx</DependentUpon>
     </Compile>
     <Compile Include="test.Designer.cs">
       <AutoGen>True</AutoGen>
