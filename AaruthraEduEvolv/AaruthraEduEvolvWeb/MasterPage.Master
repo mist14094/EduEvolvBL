@@ -98,7 +98,8 @@
 								
 								
 								<li><a href="contact.aspx">Contact<span>Get in Touch!</span></a></li>
-                                <li><a href="signin.aspx">Login<span>Subscriber Login</span></a>
+                                 <li><a href="signin.aspx">Login<span>Sign in</span></a></li>
+                                <li><a href="register.aspx">Sign up<span>Registration</span></a>
 									<%--<ul>
 										<li><a href="#">Columns</a></li>
 										<li><a href="#">Typography</a></li>

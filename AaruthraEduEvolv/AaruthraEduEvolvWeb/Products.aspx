@@ -57,7 +57,7 @@ make the communication more effective and easier.
 
 
 <br/>
-<h5 style="font-style: oblique">Product Overview</h5>
+<%--<h5 style="font-style: oblique">Product Overview</h5>
 <div style="margin-left: 20px;">
 
 1. Pronoun
@@ -107,7 +107,7 @@ make the communication more effective and easier.
 								
 
 							
-					<div class="clear"></div>
+	--%>				<div class="clear"></div>
 				</div></div></div>
 			</div>
 </asp:Content>

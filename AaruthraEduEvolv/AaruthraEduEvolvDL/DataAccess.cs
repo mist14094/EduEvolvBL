@@ -1133,5 +1133,82 @@ namespace AaruthraEduEvolvDL
             }
         }
 
+        public DataTable GetOralMasterDetail(int MaterialID)
+        {
+            Nlog.Trace(message: this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" + System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            var dataTable = new DataTable();
+            var selectCommand = new SqlCommand
+            {
+                CommandText = string.Format(_constants.GetOralMasterDetail, MaterialID)
+                ,
+                CommandTimeout = 180,
+            };
+
+
+            var adapter = new SqlDataAdapter(selectCommand);
+            var connection = new SqlConnection(_constants.DefaultConnectionString);
+            selectCommand.Connection = connection;
+            try
+            {
+                connection.Open();
+                adapter.Fill(dataTable);
+                return dataTable;
+            }
+            catch (Exception ex)
+            {
+                Nlog.Trace(
+                    this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Error", ex);
+                throw ex;
+            }
+            finally
+            {
+                connection.Close();
+                connection.Dispose();
+                Nlog.Trace(message:
+                    this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Leaving");
+            }
+        }
+
+
+        public DataTable GetOralQuestionSetForMaster(int MasterTestID)
+        {
+            Nlog.Trace(message: this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" + System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            var dataTable = new DataTable();
+            var selectCommand = new SqlCommand
+            {
+                CommandText = string.Format(_constants.GetOralQuestionSetForMaster, MasterTestID)
+                ,
+                CommandTimeout = 180,
+            };
+
+
+            var adapter = new SqlDataAdapter(selectCommand);
+            var connection = new SqlConnection(_constants.DefaultConnectionString);
+            selectCommand.Connection = connection;
+            try
+            {
+                connection.Open();
+                adapter.Fill(dataTable);
+                return dataTable;
+            }
+            catch (Exception ex)
+            {
+                Nlog.Trace(
+                    this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Error", ex);
+                throw ex;
+            }
+            finally
+            {
+                connection.Close();
+                connection.Dispose();
+                Nlog.Trace(message:
+                    this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+                    System.Reflection.MethodBase.GetCurrentMethod().Name + "::Leaving");
+            }
+        }
+
     }
 }

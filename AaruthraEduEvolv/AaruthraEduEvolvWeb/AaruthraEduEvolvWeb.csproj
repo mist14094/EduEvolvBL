@@ -117,6 +117,7 @@
     <Content Include="swf\soundmanager2_flash9.swf" />
     <Content Include="swf\soundmanager2_flash9_debug.swf" />
     <Content Include="Templates\Registration.html" />
+    <Content Include="TestYourOralSkill.aspx" />
     <Content Include="TestYourSkill.aspx" />
     <Content Include="TestYourSkillT1.aspx" />
     <Content Include="Test.aspx" />
@@ -411,6 +412,13 @@
     </Compile>
     <Compile Include="Subscription.aspx.designer.cs">
       <DependentUpon>Subscription.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestYourOralSkill.aspx.cs">
+      <DependentUpon>TestYourOralSkill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestYourOralSkill.aspx.designer.cs">
+      <DependentUpon>TestYourOralSkill.aspx</DependentUpon>
     </Compile>
     <Compile Include="TestYourSkill.aspx.cs">
       <DependentUpon>TestYourSkill.aspx</DependentUpon>

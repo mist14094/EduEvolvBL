@@ -39,9 +39,9 @@ public partial class TestYourSkill : System.Web.UI.Page
                 if (GetMasterQuestionSet != null)
                 {
                     header.InnerHtml = GetMasterQuestionSet.strTestTitle;
-                    desc.InnerHtml = GetMasterQuestionSet.strDescription;
-                    Duration.InnerHtml = "Duration : " + GetMasterQuestionSet.intDuration.ToString();
-                    SkillLevel.InnerHtml = "Skill Level : " + GetMasterQuestionSet.strSkillLevel;
+                 //   desc.InnerHtml = GetMasterQuestionSet.strDescription;
+                 //   Duration.InnerHtml = "Duration : " + GetMasterQuestionSet.intDuration.ToString();
+                 //   SkillLevel.InnerHtml = "Skill Level : " + GetMasterQuestionSet.strSkillLevel;
                     ListView1.DataSource = GetMasterQuestionSet.QuestionList;
                     ListView1.DataBind();
 
@@ -49,9 +49,9 @@ public partial class TestYourSkill : System.Web.UI.Page
                     {
                         btnSubmit.Visible = false;
                         header.Visible = false;
-                        desc.Visible = false;
-                        Duration.Visible = false;
-                        SkillLevel.Visible = false;
+                   //     desc.Visible = false;
+                   //     Duration.Visible = false;
+                   //     SkillLevel.Visible = false;
 
                     }
                 }

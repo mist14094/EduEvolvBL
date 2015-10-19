@@ -85,5 +85,10 @@ namespace AaruthraEduEvolvConstants
 
         public string GetQuestionSetForMaster =
             "SELECT *  FROM [veeraEDU].[rasucas].[TestQuestions] WHERE MasterTestID={0}";
+
+        public string GetOralMasterDetail = "SELECT *   FROM [veeraEDU].[rasucas].[OralMaster] WHERE MaterialID={0}";
+
+        public string GetOralQuestionSetForMaster =
+            "SELECT *  FROM [veeraEDU].[rasucas].[OralQuestions] WHERE MasterTestID={0}";
     }
 }

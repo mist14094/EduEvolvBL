@@ -85,11 +85,12 @@ public partial class register : System.Web.UI.Page
                         break;
                 }
                 //return message;
+                
                 alert.InnerHtml = message;
                 alert.Style.Add("display", "true");
                 ClearValues();
                 //ClientScript.RegisterStartupScript(GetType(), "alert", "alert('" + message + "');", true);
-            Response.Redirect("");
+         //   Response.Redirect("");
             
         }
         catch (SqlException ex)

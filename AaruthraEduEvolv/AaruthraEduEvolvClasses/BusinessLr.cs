@@ -298,6 +298,8 @@ namespace AaruthraEduEvolvBL
             return _questionandAnswers.GetQuestionAnswers(_access.GetQuestionSetForMaster(intMasterTestID));
         }
 
+
+
         public Test GetMasterQuestionSet(int masterQuestion)
         {
             _nlog.Trace(message:
@@ -308,6 +310,30 @@ namespace AaruthraEduEvolvBL
             {
                 return _test.GetMasterQuestionSet(TestMaster,
                     GetQuestionandAnswers(Convert.ToInt16(TestMaster.Rows[0]["Sno"].ToString())));
+            }
+            else
+            {
+                return null;
+            }
+        }
+        public List<QuestionandAnswers> GetOralQuestionandAnswers(int intMasterTestID)
+        {
+            _nlog.Trace(message:
+     this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+     System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            return _questionandAnswers.GetQuestionAnswers(_access.GetOralQuestionSetForMaster(intMasterTestID));
+        }
+
+        public Test GetOralMasterQuestionSet(int masterQuestion)
+        {
+            _nlog.Trace(message:
+   this.GetType().Namespace + ":" + MethodBase.GetCurrentMethod().DeclaringType.Name + ":" +
+   System.Reflection.MethodBase.GetCurrentMethod().Name + "::Entering");
+            var TestMaster = _access.GetOralMasterDetail(masterQuestion);
+            if (TestMaster.Rows.Count > 0)
+            {
+                return _test.GetMasterQuestionSet(TestMaster,
+                    GetOralQuestionandAnswers(Convert.ToInt16(TestMaster.Rows[0]["Sno"].ToString())));
             }
             else
             {

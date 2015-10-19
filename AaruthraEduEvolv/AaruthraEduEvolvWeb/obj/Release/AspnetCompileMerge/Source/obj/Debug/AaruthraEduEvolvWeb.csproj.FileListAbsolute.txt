@@ -40,19 +40,6 @@ C:\Users\vramalingam\Desktop\New folder\EduEvolvBL\AaruthraEduEvolv\AaruthraEduE
 C:\Users\vramalingam\Desktop\New folder\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\obj\Debug\AaruthraEduEvolvWeb.csprojResolveAssemblyReference.cache
 C:\Users\vramalingam\Desktop\New folder\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\obj\Debug\AaruthraEduEvolvWeb.dll
 C:\Users\vramalingam\Desktop\New folder\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\obj\Debug\AaruthraEduEvolvWeb.pdb
-G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\NLog.config
-G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\AaruthraEduEvolvWeb.dll
-G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\AaruthraEduEvolvWeb.pdb
-G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\AaruthraEduEvolvBL.dll
-G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\AaruthraEduEvolvConstants.dll
-G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\NLog.dll
-G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\AaruthraEduEvolvDL.dll
-G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\AaruthraEduEvolvBL.pdb
-G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\AaruthraEduEvolvConstants.pdb
-G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\NLog.xml
-G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\AaruthraEduEvolvDL.pdb
-G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\obj\Debug\AaruthraEduEvolvWeb.csprojResolveAssemblyReference.cache
-G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\obj\Debug\AaruthraEduEvolvWeb.dll
 G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\obj\Debug\AaruthraEduEvolvWeb.pdb
 D:\Rasu\Vivek\EduEvol\EduEvolvBL-dcbb4836be0e2678bc5537d394307b8e488c9b68\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\NLog.config
 D:\Rasu\Vivek\EduEvol\EduEvolvBL-dcbb4836be0e2678bc5537d394307b8e488c9b68\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\AaruthraEduEvolvWeb.dll
@@ -97,4 +84,17 @@ C:\Users\vramalingam\Desktop\EduEvolv\Latest Rasukumar\AaruthraEduEvolv_150616\A
 C:\Users\vramalingam\Desktop\EduEvolv\Latest Rasukumar\AaruthraEduEvolv_150616\AaruthraEduEvolv\AaruthraEduEvolv\AaruthraEduEvolvWeb\obj\Debug\AaruthraEduEvolvWeb.csprojResolveAssemblyReference.cache
 C:\Users\vramalingam\Desktop\EduEvolv\Latest Rasukumar\AaruthraEduEvolv_150616\AaruthraEduEvolv\AaruthraEduEvolv\AaruthraEduEvolvWeb\obj\Debug\AaruthraEduEvolvWeb.dll
 C:\Users\vramalingam\Desktop\EduEvolv\Latest Rasukumar\AaruthraEduEvolv_150616\AaruthraEduEvolv\AaruthraEduEvolv\AaruthraEduEvolvWeb\obj\Debug\AaruthraEduEvolvWeb.pdb
+G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\obj\Debug\AaruthraEduEvolvWeb.csprojResolveAssemblyReference.cache
+G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\NLog.config
 G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\AaruthraEduEvolvWeb.dll.config
+G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\AaruthraEduEvolvWeb.dll
+G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\AaruthraEduEvolvWeb.pdb
+G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\AaruthraEduEvolvBL.dll
+G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\AaruthraEduEvolvConstants.dll
+G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\NLog.dll
+G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\AaruthraEduEvolvDL.dll
+G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\AaruthraEduEvolvBL.pdb
+G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\AaruthraEduEvolvConstants.pdb
+G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\NLog.xml
+G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\bin\AaruthraEduEvolvDL.pdb
+G:\Veeras Education\EduEvolvBL\AaruthraEduEvolv\AaruthraEduEvolvWeb\obj\Debug\AaruthraEduEvolvWeb.dll

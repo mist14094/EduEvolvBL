@@ -31,9 +31,9 @@
 							<figure>
 								<img width="130" height="130" src="images/demo/team1.jpg" class="aligncenter" />
 							</figure>
-							<h5>Veera</h5>
-							<h6><a href="#">CEO / Founder</a></h6>
-							Mr.Veera, being the founder and the proprietor of Veera's Education, has taken the sole responsibility to synchronize all the activities of bringing our services, to the general public.
+							<div style="color: crimson; font-size: 17px"><b>Veera</b></div>
+							<div style="color: crimson"><i>CEO / Founder</i></div>
+						<div style="color: crimson">Mr.Veera, being the founder and the proprietor of Veera's Education, has taken the sole responsibility to synchronize all the activities of bringing our services, to the general public.</div>	
 						</div></center>
 						
 					

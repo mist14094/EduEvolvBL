@@ -60,4 +60,12 @@ public partial class Video : System.Web.UI.Page
 
         Response.Redirect("TestYourSkill.aspx?MaterialID=" + MaterialID);
     }
+
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        int MaterialID = 0;
+        int.TryParse(Request.QueryString["MaterialID"] ?? "0", out MaterialID);
+
+        Response.Redirect("TestYourOralSkill.aspx?MaterialID=" + MaterialID);
+    }
 }

@@ -201,7 +201,7 @@
 			  
       
   	  			  <div class="code" id="vimeoembedCode"></div>
-				 <center>	<asp:Button ID="Button1" runat="server" Text="Take your test" OnClick="Button1_Click" />	</center> 		       
+				 <center>	<asp:Button ID="Button1" runat="server" Text="Take your test" OnClick="Button1_Click" />    <asp:Button ID="Button2" runat="server" Text="Practice Oral Test" OnClick="Button2_Click" />	</center> 		       
 				</div>
               </div>
 			  

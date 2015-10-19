@@ -21,7 +21,9 @@
 						<div class="content">
 						<p><h3 style="font-style: italic">Seeking a new job, a promotion, a college place or starting a new business?</h3>
 
-With a start in career in the field of Exports and Imports, the founder of Veera’s Education, 
+Skills and knowledge on communicating makes you a more valuable employee, whether working for yourself, for an employer, or future employer. “Veera’s Education” aims to empower you to improve your economic and personal circumstances through effective communication. We aim to build a strong, global online learning community, filled with free, high-quality resources to help you develop language communication skills. <br/><br/>
+
+<%--With a start in career in the field of Exports and Imports, the founder of Veera’s Education, 
 
 Mr.Veera had a very tough time of communicating worldwide. It was then that he was 
 
@@ -39,7 +41,7 @@ communication. We aim to build a strong, global online learning community, fille
 
 high-quality resources to help you develop language communication skills.
 
-<br/><br/>
+<br/><br/>--%>
 
 &nbsp;&nbsp;&nbsp;
 

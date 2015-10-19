@@ -39,7 +39,11 @@ namespace AaruthraEduEvolvWeb
                     AaruthraEduEvolvBL.SendMail mail = new AaruthraEduEvolvBL.SendMail();
                   mail.SendMailNow("info@veeraseducation.com", "From " + txtName.Text,
                    // mail.SendMailNow("rajkumarcse2006@gmail.com", "From " + txtName.Text,
-                        "Email Address : " + txtEmail.Text + "<br/> Website :  " + txtWebsite.Text + "<br/> " +
+                        "Email Address : " + txtEmail.Text + 
+                        "<br/> Phone No :  " + txtPhone.Text +
+                        "<br/> Address :  " + txtAddress.Text +
+                        "<br/> Company Name :  " + txtCompanyName.Text + 
+                        "<br/> " +
                         txtMessage.Text, true);
                     GenerateRandomValue();
                     lblResult.Text = "Email Sent!";
@@ -70,7 +74,7 @@ namespace AaruthraEduEvolvWeb
             txtEmail.Text = "";
             txtName.Text = "";
             txtMessage.Text = "";
-            txtWebsite.Text = "";
+            txtPhone.Text = "";
             GenerateRandomValue();
         }
     }
