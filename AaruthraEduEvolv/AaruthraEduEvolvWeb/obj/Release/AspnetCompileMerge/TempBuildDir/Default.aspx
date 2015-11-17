@@ -139,6 +139,9 @@
 								<a href="#"><img src="images/demo/slide1.png"  /></a>
 							</li>
 							<!-- / slide item -->
+                            <li>
+								<a href="register.aspx"><img src="images/demo/slide12.jpg"  /></a>
+							</li>
 							<li>
 								<img src="images/demo/slide2.png"  />
 							</li>
@@ -262,7 +265,7 @@
 					
 					<div class="one_fourth">
 						<div class="syswidget">
-									<h3>Postal Address</h3>
+									<h3>Corporate Office</h3>
 							<p>Veera's Education,<br>
 							2nd floor, Velichem Super Market Upstairs, Near Fly Over,<br>
 							Engineering College Road, <br>
@@ -277,7 +280,7 @@
 						<div class="syswidget">
 							<h3 class="widget-title">Get in Touch</h3>
 							<p><br/>
-							 +91 98941 69003 <br /> +91 97916 08122<br>
+							 +91 98942 90209 <br /> +91 98657 46640<br>
 							info@veeraseducation.com</p>						
 						</div>
 					</div>

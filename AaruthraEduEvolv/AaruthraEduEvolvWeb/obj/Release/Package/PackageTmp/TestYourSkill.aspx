@@ -244,6 +244,7 @@ hr {
          
        <%--    <asp:Label ID="lblstrQuestionHint" runat="server" Text='<%# string.Concat("  <br/> [ Question Hint :  ", Eval("strQuestionHint") ," ]")%>' />  --%>
          <br/><asp:TextBox runat="server" ID="txtAnswer" Width="100%" ></asp:TextBox>
+           <asp:RequiredFieldValidator runat=server ControlToValidate=txtAnswer ErrorMessage="Answer is required." ForeColor= "Red"> *Answer Required</asp:RequiredFieldValidator>
           <%--      <asp:Label ID="lblstrQuestionAL" runat="server" Text='<%#Eval("strQuestionAL")%>' /> --%>
         
           <asp:Label ID="lblstrAnswerDesc" runat="server" Text='<%#string.Concat( "<br/> Answer : ",Eval("strAnswerChoice") )%>' Visible="False"/>

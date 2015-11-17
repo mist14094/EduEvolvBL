@@ -72,6 +72,7 @@
     <Content Include="aboutus.aspx" />
     <Content Include="Activation.aspx" />
     <Content Include="css\mp3-player-button.css" />
+    <Content Include="images\demo\slide12.jpg" />
     <Content Include="image\arrow-right-black-2x.png" />
     <Content Include="image\arrow-right-black.gif" />
     <Content Include="image\arrow-right-black.png" />

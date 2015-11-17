@@ -114,8 +114,8 @@
 	            var vimeoID = vimeoURL.substring(17);
 	        }
 
-	        var vimeoEmbed = "&lt;iframe src='" + protocol + "://player.vimeo.com/video/" + vimeoID + "' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;";
-	        var vimeopreview = "<iframe src='" + protocol + "://player.vimeo.com/video/" + vimeoID + "'  frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>";
+	        var vimeoEmbed = "&lt;iframe src='" + "https" + "://player.vimeo.com/video/" + vimeoID + "' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;";
+	        var vimeopreview = "<iframe src='" + "https" + "://player.vimeo.com/video/" + vimeoID + "'  frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>";
 
 	        $("#vimeoembedCode").html(embedLabel + "<textarea rows='12' class='codebox'>" + embedContainerCSS + embedContainerDivOpen + vimeoEmbed + embedContainerDivClose + "</textarea>");
 	        $("#vimeopreview").html(previewLabel + previewPrefix + vimeopreview + previewSuffix);
@@ -139,7 +139,7 @@
 	</script>
 	
   </head>
-  <body id="Body1" runat="server">
+  <body id="Body1" runat="server" oncontextmenu="return false;">
 	<form id="form1" runat="server">
 	  <nav class="navbar navbar-static-top navbar-inverse" role="navigation">
 	    <div class="container-fluid">
@@ -201,7 +201,7 @@
 			  
       
   	  			  <div class="code" id="vimeoembedCode"></div>
-				 <center>	<asp:Button ID="Button1" runat="server" Text="Take your test" OnClick="Button1_Click" />    <asp:Button ID="Button2" runat="server" Text="Practice Oral Test" OnClick="Button2_Click" />	</center> 		       
+				 <center>	<asp:Button ID="Button1" runat="server" Text="Practical Test" OnClick="Button1_Click" />    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <asp:Button ID="Button2" runat="server" Text="Speech Test" OnClick="Button2_Click" />	</center> 		       
 				</div>
               </div>
 			  
