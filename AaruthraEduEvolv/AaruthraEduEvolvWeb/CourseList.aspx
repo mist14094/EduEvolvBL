@@ -173,7 +173,14 @@
             <div class="col-md-10 col-md-offset-1">
                 <div class="visible-desktop" style="height: 12px">
                 </div>
-                        <asp:ListView ID="ListView1" GroupItemCount="4" runat="server" DataKeyNames="MaterialID">
+              <div class="container">
+            <p  >
+                <small> <img width="16px"  height = "16px" src="http://wwwimages.adobe.com/content/dam/acom/en/legal/images/badges/Adobe_PDF_file_icon_32x32.png"/> <a target="_blank" href="audio/keybook.pdf">Please go through this book for your reference </a>.
+                   </small></p>
+        </div>
+	<br/>
+                
+                                     <asp:ListView ID="ListView1" GroupItemCount="4" runat="server" DataKeyNames="MaterialID">
             <LayoutTemplate>
     <table cellpadding="2" runat="server"
            id="tblProducts" style="height:320px">
@@ -192,7 +199,7 @@
            <ItemTemplate>
     <td id="Td1" valign="top" align="center" style="width:300px;" runat="server">
      <asp:ImageButton ID="ProductImage" runat="server"  style="margin-bottom:10px" Width="75%" 
-           ImageUrl='<% #Eval("Thumbnail")%>' PostBackUrl='<%# String.Concat("video.aspx?MaterialID=",Eval("MaterialID")) %>' />
+           ImageUrl='<% #Eval("Thumbnail").ToString().Replace("webp","jpg")%>' PostBackUrl='<%# String.Concat("video.aspx?MaterialID=",Eval("MaterialID")) %>' />
            <br /><div style="font-weight:bold">
      <asp:HyperLink ID="ProductLink" runat="server" Text='<% #Eval("Title")%>'
            Target="_blank" NavigateUrl='<%# String.Concat("video.aspx?MaterialID=",Eval("MaterialID")) %>'
@@ -205,14 +212,20 @@
             </EmptyDataTemplate>
         </asp:ListView>
 
-            
-			  
+   		
           <br/><br/><br/>    
 
+               
             </div>
+            
+       
         </div>
+        
+    
     </div>
     <!--footer-->
+        
+        
     <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
         <div class="container">
             <p class="text-muted text-center" style="padding-top: 12px">

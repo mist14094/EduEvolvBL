@@ -75,6 +75,15 @@ public partial class Video {
     protected global::System.Web.UI.HtmlControls.HtmlGenericControl player;
     
     /// <summary>
+    /// playerMessage control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.HtmlControls.HtmlGenericControl playerMessage;
+    
+    /// <summary>
     /// Description control.
     /// </summary>
     /// <remarks>

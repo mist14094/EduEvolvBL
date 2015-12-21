@@ -26,16 +26,26 @@ public partial class Video : System.Web.UI.Page
             cs = (Customer)Session["UserData"];
             lblUserName.Text = cs.strFirstName + " &nbsp; &nbsp;"; ;
             bool checkValue = false;
+
+
             foreach (var course in cs.Courses)
             {
                 for (int i = 0; i < course.Materials.Count; i++)
                 {
                     if (course.Materials[i].MaterialID == MaterialID)
                     {
-                        header.InnerHtml = course.Materials[i].Title;
-                        player.Attributes.Add("src", course.Materials[i].VideoURL);
-                        Description.InnerHtml = course.Materials[i].Description;   
-         
+                        if (!Request.Browser.Browser.ToString().ToUpper().Contains("FIREFOX"))
+                        {
+                            header.InnerHtml = course.Materials[i].Title;
+                            player.Attributes.Add("src", course.Materials[i].VideoURL);
+                            Description.InnerHtml = course.Materials[i].Description;
+                            playerMessage.Visible = false;
+                        }
+                        else
+                        {
+                            playerMessage.Visible = true;
+                        }
+
                     }
                     
                 }

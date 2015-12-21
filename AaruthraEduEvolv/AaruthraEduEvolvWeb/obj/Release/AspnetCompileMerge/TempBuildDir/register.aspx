@@ -102,11 +102,14 @@
                                 message: 'The mobile number is required and can\'t be empty'
                             },
                             stringLength: {
-                                min: 10,
-                                max: 10,
-                                message: 'The mobile number must be 10 digit'
+                                
+                                message: 'Enter mobile number'
                             },
-                            integer: true
+                            integer: {
+                message: 'Enter Valid Mobile Number'
+                                // The default separators
+               
+                            }
                         }
 
                     },
@@ -278,7 +281,7 @@
         <label class="col-lg-3 control-label">
             Username:</label>
         <div class="col-lg-5">
-            <asp:TextBox ID="txt_username"  ClientIDMode="Static" runat="server" type="text" name="txt_username" CssClass="form-control"  placeholder="Email"></asp:TextBox>
+            <asp:TextBox ID="txt_username"  ClientIDMode="Static" runat="server" type="text" name="txt_username" CssClass="form-control"  placeholder="Email / Username"></asp:TextBox>
             <%--<input type="text" class="form-control" name="txt_username" />--%>
         </div>
     </div>
@@ -286,7 +289,7 @@
         <label class="col-lg-3 control-label">
             Password:</label>
         <div class="col-lg-5">
-             <asp:TextBox ID="txt_passowrd"  ClientIDMode="Static" runat="server" TextMode="Password" name="txt_passowrd" CssClass="form-control"  placeholder="Password"></asp:TextBox>
+             <asp:TextBox ID="txt_passowrd"  ClientIDMode="Static" runat="server" TextMode="Password" name="txt_passowrd" CssClass="form-control"  placeholder="Choose a Secured Password"></asp:TextBox>
            
             <%--<input type="password" class="form-control" name="txt_passowrd" />--%>
         </div>
@@ -295,7 +298,7 @@
         <label class="col-lg-3 control-label">
             Conform:</label>
         <div class="col-lg-5">
-            <asp:TextBox ID="txt_cpassowrd"  ClientIDMode="Static" runat="server" TextMode="Password" name="txt_cpassowrd" CssClass="form-control"  placeholder="Password"></asp:TextBox>
+            <asp:TextBox ID="txt_cpassowrd"  ClientIDMode="Static" runat="server" TextMode="Password" name="txt_cpassowrd" CssClass="form-control"  placeholder="Choose a Secured Password"></asp:TextBox>
            <%-- <input type="password" class="form-control" name="txt_cpassowrd" />--%>
         </div>
     </div>

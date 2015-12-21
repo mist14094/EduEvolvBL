@@ -74,7 +74,7 @@ html[xmlns] .clearfix { display:block; }
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 body {
 	font: normal 13px/1.6 Helvetica, Arial, Sans-serif; 
-	color: #999;
+	color: #000000;
 	background:#e0e1df url(../images/bg.png);
 	}
 
@@ -92,7 +92,7 @@ mark {
 		position:absolute;
 		top:-10px;
 		padding:2px 6px;
-		background:#666;
+		background:#000000;
 		color:#fff;
 		letter-spacing:0;
 		-webkit-border-radius: 40px;
@@ -113,7 +113,7 @@ mark.green       { background-color: #91bd09; }
 
 
 	a {
-		color:#666; 
+	    color: #000000;
 		text-decoration:none;
 		-webkit-transition:color 200ms ease-in;
 		   -moz-transition:color 200ms ease-in;
@@ -216,7 +216,7 @@ h1, h2, h3, h4, h5, h6	{
 	font-family: 'Lora', sans-serif;
 	font-weight: normal;
 	line-height: normal;
-	color:#666; 
+	color: #000000; 
 	}
 	
 h1	{ font-size: 34px; margin: 0 0 20px 0; }
@@ -241,7 +241,7 @@ h6	{ font-size: 13px; margin: 0 0 15px 0; }
 	max-width:1280px;
 	margin: 30px auto;
 	background-color:#fff;
-	border:1px solid #999;/* IE Hack*/
+	border:1px solid #000000;/* IE Hack*/
 	border:rgba(0, 0, 0, .2) 1px solid;/* Safari 4+, Chrome, FF3.5+ */
 	border-bottom:rgba(0, 0, 0, .4) 1px solid;
 	-webkit-box-shadow:0 2px 20px rgba(0,0,0,.2);
@@ -425,10 +425,10 @@ h6	{ font-size: 13px; margin: 0 0 15px 0; }
 
 	.sf-menu a         { padding:1em 1.4em; text-decoration:none; }
 	.sf-menu a, 
-	.sf-menu a:visited { text-decoration:none; color:#999;  /* visited pseudo selector so IE6 applies text colour*/  }
+	.sf-menu a:visited { text-decoration:none; color:#000000;  /* visited pseudo selector so IE6 applies text colour*/  }
 
-	.sf-menu li a      { font-size:14px; font-weight:bold; }
-	.sf-menu li li a   { font-weight:normal; font-size:12px; }
+	.sf-menu li a      { font-size:16px; font-weight:bold; }
+	.sf-menu li li a   { font-weight:normal; font-size:15px; }
 	.sf-menu li ul     { 
 		padding:1px; 
 		background-image: url(../images/opacs/dark10.png), url(../images/opacs/dark10.png), url(../images/opacs/dark10.png);
@@ -663,7 +663,7 @@ h6	{ font-size: 13px; margin: 0 0 15px 0; }
 		font-size:16px;
 		line-height:normal;
 		font-weight:normal;
-		color:#999;
+		color:#000000;
 		font-weight:bold;
 		}
 	
@@ -1242,7 +1242,7 @@ ol.commentlist li {
 		}
 
 	.reply a:link,
-	.reply a:visited { color:#999; }
+	.reply a:visited { color:#000000; }
 	.reply a:hover   { color:#ff8800; }
 
 	.cancel-comment-reply a { 
@@ -1631,7 +1631,7 @@ table.fancy_table th  {
 	padding:8px; 
 	background-color:#f5f5f5; 
 	border: 1px solid #ddd;
-	color:#666; 
+	color:#000000; 
 	text-align:center; 
 	}
 
@@ -1681,7 +1681,7 @@ table th  {
 	padding:2em; 
 	background-color:#d9d9d9; 
 	border: 1px solid #ddd;
-	color:#666; 
+	color:#000000; 
 	text-align:center; 
 	}
 
@@ -1966,7 +1966,7 @@ a img.aligncenter    { clear:both; display:block; margin:10px auto 10px auto; pa
 		font-size:11px;
 		font-weight:bold;
 		line-height:22px;
-		color:#999; 
+		color:#000000; 
 		text-decoration:none; 
 		}
 
@@ -2054,7 +2054,7 @@ a img.aligncenter    { clear:both; display:block; margin:10px auto 10px auto; pa
 			height:auto; 
 			margin-right:2px; 
 			padding:8px 15px; 
-			color:#999;
+			color:#000000;
 			text-decoration:none; 
 			}
 
@@ -2302,7 +2302,7 @@ span.active  {
 	background: url(../images/arrow_open.png) 0 center scroll no-repeat;
 	}
 
-span.active a:link  	{ color:#666; display:block;}
+span.active a:link  	{ color:#000000; display:block;}
 
 .toggle_content     	{ clear:both; margin:0px;  }
 .toggleinside       	{ padding:10px;}
@@ -2416,7 +2416,7 @@ div#result p {
 #footer .sysform select			{ width:94%; font-size:11px; }
 #footer .sysform input.txt		{ width:55%; } 
 
-#sidebar .sysform input.txt		{ width:55%; color:#999;} 
-#sidebar .sysform textarea		{ color:#999;}
+#sidebar .sysform input.txt		{ width:55%; color:#000000;} 
+#sidebar .sysform textarea		{ color:#000000;}
 
 

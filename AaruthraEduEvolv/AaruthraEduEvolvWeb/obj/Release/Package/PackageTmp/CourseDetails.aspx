@@ -202,7 +202,7 @@
                         </td>
                     </ItemTemplate>
                     <EmptyDataTemplate>
-                      <center> <b>There is no active course set for you, You can buy more course.<br/> <asp:Button runat="server" ID="btnBuyPlan" Text="Buy More" OnClick="btnBuyPlan_onClickEvent" /></b> </center>
+                      <center> <b>There is no active course set for you, You can buy more course.<br/> (or)<br/> If you already paid, Your payment is under verfication, Please hang on your content will be available soon!<br/> <br/><asp:Button runat="server" ID="btnBuyPlan" Text="Buy More" OnClick="btnBuyPlan_onClickEvent" /></b> </center>
                     </EmptyDataTemplate>
                 </asp:ListView>
                

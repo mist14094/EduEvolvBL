@@ -72,13 +72,17 @@
     <Content Include="aboutus.aspx" />
     <Content Include="Activation.aspx" />
     <Content Include="css\mp3-player-button.css" />
+    <Content Include="Default.aspx" />
     <Content Include="images\demo\slide12.jpg" />
+    <Content Include="images\Plans.png" />
     <Content Include="image\arrow-right-black-2x.png" />
     <Content Include="image\arrow-right-black.gif" />
     <Content Include="image\arrow-right-black.png" />
     <Content Include="image\arrow-right-white-2x.png" />
     <Content Include="image\arrow-right-white.gif" />
     <Content Include="image\arrow-right-white.png" />
+    <Content Include="js\jquery.waterwheelCarousel.js" />
+    <Content Include="js\jquery.waterwheelCarousel.min.js" />
     <Content Include="NewSubscription.aspx" />
     <Content Include="ChangeSubscription.aspx" />
     <Content Include="bin\AaruthraEduEvolvBL.dll" />
@@ -122,6 +126,7 @@
     <Content Include="TestYourSkill.aspx" />
     <Content Include="TestYourSkillT1.aspx" />
     <Content Include="Test.aspx" />
+    <Content Include="VideoN.aspx" />
     <Content Include="Video.aspx" />
     <Content Include="CourseList.aspx" />
     <Content Include="css\animate.css" />
@@ -136,7 +141,7 @@
     <Content Include="css\prettyPhoto.css" />
     <Content Include="css\responsive.css" />
     <Content Include="css\style.css" />
-    <Content Include="Default.aspx" />
+    <Content Include="DefaultOld.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="images\arrow-downs.html" />
     <Content Include="images\arrow_close.png" />
@@ -320,6 +325,13 @@
     <Compile Include="Activation.aspx.designer.cs">
       <DependentUpon>Activation.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="NewSubscription.aspx.cs">
       <DependentUpon>NewSubscription.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -376,8 +388,8 @@
     <Compile Include="PasswordReset.aspx.designer.cs">
       <DependentUpon>PasswordReset.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="DefaultOld.aspx.designer.cs">
+      <DependentUpon>DefaultOld.aspx</DependentUpon>
     </Compile>
     <Compile Include="Products.aspx.designer.cs">
       <DependentUpon>Products.aspx</DependentUpon>
@@ -447,6 +459,13 @@
     <Compile Include="Test.aspx.designer.cs">
       <DependentUpon>Test.aspx</DependentUpon>
     </Compile>
+    <Compile Include="VideoN.aspx.cs">
+      <DependentUpon>VideoN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VideoN.aspx.designer.cs">
+      <DependentUpon>VideoN.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Video.aspx.cs">
       <DependentUpon>Video.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -461,8 +480,8 @@
     <Compile Include="CourseList.aspx.designer.cs">
       <DependentUpon>CourseList.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="DefaultOld.aspx.cs">
+      <DependentUpon>DefaultOld.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MasterPage.Master.cs">

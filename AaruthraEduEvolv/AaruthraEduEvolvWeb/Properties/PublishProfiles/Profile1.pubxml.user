@@ -3760,7 +3760,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/18/2015 07:18:36</publishTime>
     </File>
     <File Include="bin/AaruthraEduEvolvWeb.dll">
-      <publishTime>10/24/2015 06:06:17</publishTime>
+      <publishTime>12/20/2015 12:01:00</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>10/02/2013 12:10:10</publishTime>
@@ -3781,10 +3781,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/18/2015 05:44:23</publishTime>
     </File>
     <File Include="CourseDetails.aspx">
-      <publishTime>08/04/2015 16:22:47</publishTime>
+      <publishTime>12/20/2015 11:10:16</publishTime>
     </File>
     <File Include="CourseList.aspx">
-      <publishTime>06/08/2015 17:04:36</publishTime>
+      <publishTime>12/20/2015 11:25:08</publishTime>
     </File>
     <File Include="CourseSubscription.aspx">
       <publishTime>06/15/2015 21:20:17</publishTime>
@@ -3826,10 +3826,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/08/2015 17:04:36</publishTime>
     </File>
     <File Include="css/style.css">
-      <publishTime>10/18/2015 05:10:09</publishTime>
+      <publishTime>12/20/2015 05:07:55</publishTime>
     </File>
     <File Include="Default.aspx">
-      <publishTime>10/24/2015 05:38:39</publishTime>
+      <publishTime>12/20/2015 11:27:11</publishTime>
+    </File>
+    <File Include="DefaultN.aspx">
+      <publishTime>12/20/2015 04:56:59</publishTime>
+    </File>
+    <File Include="DefaultOld.aspx">
+      <publishTime>12/20/2015 08:43:52</publishTime>
     </File>
     <File Include="FirstLogin.aspx">
       <publishTime>08/04/2015 09:32:57</publishTime>
@@ -4065,6 +4071,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="images/opacs/white90.png">
       <publishTime>06/08/2015 17:04:36</publishTime>
     </File>
+    <File Include="images/Plans.png">
+      <publishTime>12/20/2015 10:23:06</publishTime>
+    </File>
     <File Include="images/post_slider_navs.html">
       <publishTime>06/08/2015 17:04:36</publishTime>
     </File>
@@ -4257,6 +4266,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="js/jquery.ui.map.js">
       <publishTime>06/08/2015 17:04:36</publishTime>
     </File>
+    <File Include="js/jquery.waterwheelCarousel.js">
+      <publishTime>12/20/2015 04:39:41</publishTime>
+    </File>
+    <File Include="js/jquery.waterwheelCarousel.min.js">
+      <publishTime>12/20/2015 04:39:41</publishTime>
+    </File>
     <File Include="js/src/galleria.js">
       <publishTime>06/08/2015 17:04:36</publishTime>
     </File>
@@ -4285,7 +4300,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/08/2015 17:04:36</publishTime>
     </File>
     <File Include="MasterPage.Master">
-      <publishTime>10/24/2015 05:38:29</publishTime>
+      <publishTime>12/20/2015 10:28:25</publishTime>
     </File>
     <File Include="NewSubscription.aspx">
       <publishTime>10/09/2015 11:37:44</publishTime>
@@ -4297,7 +4312,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/04/2015 16:29:37</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>10/24/2015 06:06:19</publishTime>
+      <publishTime>12/20/2015 12:01:02</publishTime>
     </File>
     <File Include="Products.aspx">
       <publishTime>10/18/2015 05:20:27</publishTime>
@@ -4309,7 +4324,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/08/2015 17:04:36</publishTime>
     </File>
     <File Include="register.aspx">
-      <publishTime>06/08/2015 17:04:36</publishTime>
+      <publishTime>12/20/2015 08:40:06</publishTime>
     </File>
     <File Include="script/mp3-player-button.js">
       <publishTime>06/01/2015 20:31:58</publishTime>
@@ -4333,7 +4348,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/18/2015 05:19:24</publishTime>
     </File>
     <File Include="signin.aspx">
-      <publishTime>06/10/2015 15:17:21</publishTime>
+      <publishTime>12/20/2015 10:32:14</publishTime>
     </File>
     <File Include="Site1.Master">
       <publishTime>06/08/2015 17:04:36</publishTime>
@@ -4420,7 +4435,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/15/2015 23:10:59</publishTime>
     </File>
     <File Include="Video.aspx">
-      <publishTime>10/24/2015 05:54:27</publishTime>
+      <publishTime>12/20/2015 11:59:39</publishTime>
+    </File>
+    <File Include="VideoN.aspx">
+      <publishTime>12/20/2015 06:28:27</publishTime>
     </File>
     <File Include="Web.config">
       <publishTime>10/10/2015 11:39:18</publishTime>

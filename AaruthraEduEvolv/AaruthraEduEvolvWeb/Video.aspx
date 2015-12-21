@@ -137,6 +137,20 @@
 	    }
 		
 	</script>
+      
+      <script type="text/javascript">
+          document.getElementById('player').onload = function() {
+              window.frames["player"].document.oncontextmenu = function () { alert("No way!"); return false; };
+          }
+          
+          </script>
+          <script type="text/jscript">
+          function disableContextMenu() {
+             
+              // Or use this
+              // document.getElementById("fraDisabled").contentWindow.document.oncontextmenu = function(){alert("No way!"); return false;};;
+          }
+</script>
 	
   </head>
   <body id="Body1" runat="server" oncontextmenu="return false;">
@@ -195,7 +209,11 @@
 					</form>
   	  			  
 				  <div id="vimeopreview">
-				        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe runat="server" ID="player" src="https://player.vimeo.com/video/1275552"  frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+				        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'>
+				          
+                            <iframe Visible="True" runat="server" ID="player" src="" frameborder='0'  oncontextmenu="return false;" webkitAllowFullScreen mozallowfullscreen allowFullScreen ></iframe>
+                            <div id ="playerMessage" runat="server" Visible="False"><h2>For security reasons, We currently do not support Mozilla Browser. Sorry for the inconvenience, Please try some other browser!</h2></div>
+				      </div>
                            <br/><br/>     <div runat="server" ID="Description"></div>
 				  </div>
 			  

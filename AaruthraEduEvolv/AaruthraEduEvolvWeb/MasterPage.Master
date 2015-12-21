@@ -65,8 +65,8 @@
 						<!-- /- .nav -->
 
 						<ul class="atpsocials">
-							<li><a class="facebook" href="#"><img src="images/sociables/facebook.png" /></a></li>
-							<li><a class="twitter" href="#"><img src="images/sociables/twitter.png" /></a></li>
+							<li><a class="facebook" href="https://www.facebook.com/Veeras-Education-1643885749200062/"><img src="images/sociables/facebook.png" /></a></li>
+							<li><a class="twitter" href="https://twitter.com/veeraseducation"><img src="images/sociables/twitter.png" /></a></li>
 							<li><a class="dribbble" href="#"><img src="images/sociables/dribbble.png" /></a></li>
 							<li><a class="pinterest" href="#"><img src="images/sociables/in.png" /></a></li>
 							<li><a class="googleplus" href="#"><img src="images/sociables/googleplus.png" /></a></li>
@@ -98,8 +98,8 @@
 								
 								
 								<li><a href="contact.aspx">Contact<span>Get in Touch!</span></a></li>
-                                 <li><a href="signin.aspx">Login<span>Sign in</span></a></li>
-                                <li><a href="register.aspx">Sign up<span>Registration</span></a>
+                                 <li><a href="signin.aspx"> <div style="color: red;">Login </div><span style="color: red;">Sign in</span></a></li>
+                                <li><a href="register.aspx"><div style="color: orange;">Sign up </div><span  style="color: orange;">Registration</span></a>
 									<%--<ul>
 										<li><a href="#">Columns</a></li>
 										<li><a href="#">Typography</a></li>
@@ -133,8 +133,9 @@
 					</div>
 					<!-- /- .one_fourth -->
 					
-					<div class="one_fourth">
-						<div class="syswidget">
+						
+					<div class="one_fourth" style="font-size: 12px;">
+						<div class="syswidget" style="font-size: 12px;">
 				<h3>General Inquiries</h3>
 							<p>For all general inquiries about the company, please use the contact form.</p>
 					
@@ -143,7 +144,7 @@
 					<!-- /- .one_fourth -->
 					
 					<div class="one_fourth">
-						<div class="syswidget">
+						<div class="syswidget" style="font-size: 12px;">
 									<h3>Corporate Office</h3>
 							<p>Veera's Education,<br>
 							2nd floor, Velichem Super Market Upstairs, Near Fly Over,<br>
@@ -156,13 +157,15 @@
 					<!-- /- .one_fourth -->
 					
 					<div class="one_fourth last">
-						<div class="syswidget">
+						<div class="syswidget" style="font-size: 12px;">
 							<h3 class="widget-title">Get in Touch</h3>
 							<p><br/>
-							  +91 98942 90209 <br /> +91 98657 46640<br>
-							<email>info@veeraseducation.com</email></p>						
+							 +91 98942 90209 <br /> +91 98657 46640<br>
+							info@veeraseducation.com</p>						
 						</div>
 					</div>
+					<!-- /- .one_fourth last -->
+
 					<!-- /- .one_fourth last -->
 
 				</div>

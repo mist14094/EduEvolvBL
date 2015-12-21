@@ -51,6 +51,71 @@
         ga('send', 'pageview');
 
 </script>
+    <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var carousel = $("#carousel").waterwheelCarousel({
+                flankingItems: 3,
+                autoPlay: 1000
+            });
+
+            $('#prev').bind('click', function () {
+                carousel.prev();
+                return false;
+            });
+
+            $('#next').bind('click', function () {
+                carousel.next();
+                return false;
+            });
+
+            $('#reload').bind('click', function () {
+                newOptions = eval("(" + $('#newoptions').val() + ")");
+                carousel.reload(newOptions);
+                return false;
+            });
+
+        });
+    </script>
+
+    <style type="text/css">
+      
+      .example-desc {
+        margin:3px 0;
+        padding:5px;
+      }
+
+      #carousel {
+        width:100%;
+        height:400px;
+        position:relative;
+        clear:both;
+        overflow:hidden;
+        background:#FFF;
+      }
+      #carousel img {
+          width: 70%;
+        visibility:hidden; /* hide images until carousel can handle them */
+        cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+      }
+
+      .split-left {
+        width:40%;
+        float:left;
+      }
+      .split-right {
+        width:40%;
+        float:left;
+        margin-left:10px;
+      }
+      #callback-output {
+        height:250px;
+        overflow:scroll;
+      }
+      textarea#newoptions {
+        width:430px;
+      }
+    </style>
     </head>
     
 <body>
@@ -67,8 +132,8 @@
 						<!-- /- .nav -->
 
 						<ul class="atpsocials">
-							<li><a class="facebook" href="#"><img src="images/sociables/facebook.png" /></a></li>
-							<li><a class="twitter" href="#"><img src="images/sociables/twitter.png" /></a></li>
+							<li><a class="facebook" href="https://www.facebook.com/Veeras-Education-1643885749200062"><img src="images/sociables/facebook.png" /></a></li>
+							<li><a class="twitter" href="https://twitter.com/veeraseducation"><img src="images/sociables/twitter.png" /></a></li>
 							<li><a class="dribbble" href="#"><img src="images/sociables/dribbble.png" /></a></li>
 							<li><a class="pinterest" href="#"><img src="images/sociables/in.png" /></a></li>
 							<li><a class="googleplus" href="#"><img src="images/sociables/googleplus.png" /></a></li>
@@ -101,9 +166,9 @@
 								
 								
 								<li><a href="contact.aspx">Contact<span>Get in Touch!</span></a></li>
-                                 <li><a href="signin.aspx">Login<span>Sign in</span></a></li>
-                                <li><a href="register.aspx">Sign up<span>Registration</span></a>
-									<%--<ul>
+                                <li><a href="signin.aspx"> <div style="color: red;">Login </div><span style="color: red;">Sign in</span></a></li>
+                                <li><a href="register.aspx"><div style="color: orange;">Sign up </div><span  style="color: orange;">Registration</span></a>
+										<%--<ul>
 										<li><a href="#">Columns</a></li>
 										<li><a href="#">Typography</a></li>
 										<li><a href="#">Icons</a></li>
@@ -119,8 +184,28 @@
 				</div>
 				<!-- /- #head -->	
 			</header>
-			<!-- /- <header> -->			
-				
+			<!-- /- <header> -->
+            
+        <div>
+     <div class="pagemid">
+				<div class="maincontent">
+					
+						
+
+							<figure>
+								<center><a href="CourseSubscription.aspx"><img src="images/Plans.png" style="width: 45%;"></a></center>	
+								</figure>
+	</div></div>
+ <div id="carousel">
+      <a href="#"><img src="images/demo/slide1.png" id="item-1" /></a>
+      <a href="#"><img src="images/demo/slide12.jpg" id="item-2" /></a>
+      <a href="#"><img src="images/demo/slide2.png" id="item-3" /></a>
+      <a href="#"><img src="images/demo/slide3.png" id="item-4" /></a>
+      <a href="#"><img src="images/demo/slide4.png" id="item-5" /></a>
+    </div>
+ <center> <a href="#" id="prev">Prev</a> | <a href="#" id="next">Next</a></center>  
+            
+            		<%--		
 			<div id="featured_slider">
 				<div class="slider_wrapper">
 
@@ -131,6 +216,11 @@
 				    });
 				</script>
 				<!-- /--->
+                    
+                    
+                    
+                    
+
 
 					<div class="flexslider">
 						<ul class="slides">
@@ -164,7 +254,7 @@
 				<!-- /- .slider_wrapper -->
 			</div>
 			<!-- /- #featured_slider -->
-			
+			--%>
 			<div class="pagemid">
 				<div class="maincontent">
 
@@ -181,7 +271,8 @@
 						<div class="one_half last">
 							<figure>
 								<span class="ribbon"><img src="images/ribbons/02.png"/></span>
-								<img src="images/imac.png" />
+								<iframe src="https://player.vimeo.com/video/149553901" width="100%" height="250px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 							</figure>
 						</div>
 						<!-- /- .one_half last -->
@@ -254,8 +345,8 @@
 					</div>
 					<!-- /- .one_fourth -->
 					
-					<div class="one_fourth">
-						<div class="syswidget">
+					<div class="one_fourth" style="font-size: 12px;">
+						<div class="syswidget" style="font-size: 12px;">
 				<h3>General Inquiries</h3>
 							<p>For all general inquiries about the company, please use the contact form.</p>
 					
@@ -264,7 +355,7 @@
 					<!-- /- .one_fourth -->
 					
 					<div class="one_fourth">
-						<div class="syswidget">
+						<div class="syswidget" style="font-size: 12px;">
 									<h3>Corporate Office</h3>
 							<p>Veera's Education,<br>
 							2nd floor, Velichem Super Market Upstairs, Near Fly Over,<br>
@@ -277,7 +368,7 @@
 					<!-- /- .one_fourth -->
 					
 					<div class="one_fourth last">
-						<div class="syswidget">
+						<div class="syswidget" style="font-size: 12px;">
 							<h3 class="widget-title">Get in Touch</h3>
 							<p><br/>
 							 +91 98942 90209 <br /> +91 98657 46640<br>
@@ -299,11 +390,10 @@
                 </div>
                 <!-- /- .inner(copyright) -->
             </div>
-            <!-
+           </div>	
 		<!-- /- #wrapper -->
 
-	</div>
-	<!-- /- #layout(boxed/stretched) -->
+		<!-- /- #layout(boxed/stretched) -->
     <form id="Form1" runat="server"></form>
     </div>
 </body>
